@@ -20,7 +20,9 @@ function Section({ id, title, children }) {
 
 
 export default function App(){
-  const year = useMemo(() => new  Date().getFullYear(), []);
+    const year = useMemo(function () {
+      return new Date().getFullYear();
+    }, []);
 
     const nav = [
         { label: "About", href: "#about"},
@@ -32,11 +34,13 @@ export default function App(){
             <header>
                 <strong>{PROFILE.name}</strong>
                 <nav>
-                    {nav.map((n) => (
-                        <a key={n.href} href={n.href}>
-                            {n.label}
-                        </a>
-                    ))}
+                    {nav.map(function (n) {
+                        return (
+                            <a key={n.href} href={n.href}>
+                                {n.label}
+                            </a>
+                        );
+                    })}
                 </nav>
             </header>
 
@@ -44,15 +48,17 @@ export default function App(){
                 <h1>{PROFILE.name}</h1>
                 <p>{PROFILE.location} <a href={'mailto:${PROFILE.email}'}>{PROFILE.email}</a>
                 </p>
-            {PROFILE.links.map((l) => (
-                <a key={l.href} href={l.href} target="_blank" rel="noreferrer">
-                    {l.label}
-                </a>
-            ))}
+            {PROFILE.links.map(function (l) {
+                return (
+                    <a key={l.href} href={l.href} target="_blank" rel="noreferrer">
+                        {l.label}
+                    </a>
+                );
+            })}
+
             </main>
         </div>
-
-
+    );
 };
 
 
