@@ -1,0 +1,73 @@
+# 워크플로(자동화 작업) 이름: GitHub Actions 탭에서 이렇게 보임
+name: Deploy to GitHub Pages
+
+# 언제 이 작업을 실행할지(트리거)
+on:
+  # main 브랜치에 push(커밋 푸시)될 때마다 자동 실행
+  push:
+    branches: ["main"]
+  # GitHub Actions 화면에서 "Run workflow" 버튼으로 수동 실행도 가능
+  workflow_dispatch:
+
+# 이 워크플로가 GitHub 자원에 접근할 권한
+permissions:
+  contents: read   # 레포 코드를 읽을 권한(체크아웃에 필요)
+  pages: write     # GitHub Pages에 배포할 권한
+  id-token: write  # OIDC 토큰 발급(배포 액션이 요구)
+
+# 동시에 여러 배포가 겹치면 꼬일 수 있어서, 같은 그룹(pages)은 1개만 돌리도록 제어
+concurrency:
+  group: "pages"
+  cancel-in-progress: false  # 새 배포가 와도 진행 중인 배포를 강제로 취소하지 않음(원하면 true로 바꿀 수 있음)
+
+jobs:
+  # 1) 빌드 job: 프론트엔드 소스를 빌드해서 dist를 만드는 단계
+  build:
+    runs-on: ubuntu-latest
+
+    # 여기서부터 실행되는 "run: ..." 명령어는 기본적으로 frontend 폴더에서 실행됨
+    # (즉, npm ci / npm run build를 frontend에서 돌리겠다는 의미)
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      # 레포 소스를 러너(가상머신)로 내려받음
+      - uses: actions/checkout@v4
+
+      # Node.js 환경 세팅 (Vite/React 빌드에 필요)
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20         # Node 버전(원하면 18/22 등으로 변경 가능)
+          cache: "npm"             # npm 캐시 사용(빌드 속도 개선)
+          # package-lock.json이 frontend 폴더 안에 있으니 캐시 기준 파일도 그 경로로 지정
+          cache-dependency-path: frontend/package-lock.json
+
+      # 의존성 설치 (package-lock.json 기준으로 "정확히" 설치하는 방식)
+      - run: npm ci
+
+      # Vite 빌드 실행 -> frontend/dist 폴더 생성
+      - run: npm run build
+
+      # GitHub Pages 배포를 위한 설정(환경 준비)
+      - uses: actions/configure-pages@v5
+
+      # 빌드 결과물(dist)을 Pages 배포용 아티팩트로 업로드
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: frontend/dist      # 업로드할 폴더 (중요!)
+
+  # 2) deploy job: 위에서 업로드한 아티팩트를 실제 GitHub Pages에 배포하는 단계
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build                  # build가 성공해야 deploy가 실행됨
+
+    # 배포된 URL을 환경 정보로 연결해 보여줌
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      # 업로드된 아티팩트를 Pages로 배포
+      - id: deployment
+        uses: actions/deploy-pages@v4
