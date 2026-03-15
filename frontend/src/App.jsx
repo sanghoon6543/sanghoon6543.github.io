@@ -1,9 +1,9 @@
 import { useMemo } from "react"
 
 const PROFILE = {
-  name: "Kim, Sang Hoon"
-  location: "Seoul, South Korea"
-  email: "sanghoon6543@gmail.com"
+  name: "Kim, Sang Hoon",
+  location: "Seoul, South Korea",
+  email: "sanghoon6543@gmail.com",
   links: [
       { label: "GitHub", href: "https://github.com/sanghoon6543"},
   ],
