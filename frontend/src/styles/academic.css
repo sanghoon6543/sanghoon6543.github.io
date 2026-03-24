@@ -1,3 +1,11 @@
+html, body {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+}
+
+* {
+    font-family: inherit;
+}
+
 .ap-shell { display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
 .ap-sidebar { border-right: 1px solid #e5e7eb; padding: 18px; position: sticky; top: 0; height: 100vh; overflow: auto; }
 .ap-main { padding: 28px; max-width: 980px; }
