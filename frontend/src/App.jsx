@@ -4,7 +4,10 @@ import AcademicLayout from "./layouts/AcademicLayout.jsx";
 
 import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
+import Archive from "./pages/Archive.jsx"
 import CV from "./pages/CV.jsx";
+import Gallery from "./pages/Gallery.jsx"
+import Hobby from "./pages/Hobby.jsx"
 
 export default function App() {
   return (
@@ -12,7 +15,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/archive" element={<Archive />} />
         <Route path="/cv" element={<CV />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/hobby" element={<Hobby />} />
       </Routes>
     </AcademicLayout>
   );

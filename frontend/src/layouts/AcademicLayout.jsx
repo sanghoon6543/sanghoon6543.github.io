@@ -6,7 +6,10 @@ export default function AcademicLayout(props) {
   var nav = [
     { to: "/", label: "About" },
     { to: "/projects", label: "Projects" },
+    { to: "/archive", label: "Archive" },
     { to: "/cv", label: "CV" },
+    { to: "/gallery", label: "Gallery" },
+    { to: "/hobby", label: "Hobby" },
   ];
 
   return (
