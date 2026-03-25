@@ -2,6 +2,10 @@
 import React from "react";
 
 export default function Projects() {
+  React.useEffect(function () {
+          document.title = "Projects | Sanghoon Kim";
+  }, []);
+
   return (
     <div>
       <h1> Projects </h1>
