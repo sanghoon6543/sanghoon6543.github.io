@@ -1,6 +1,10 @@
 import React from "react";
 
 export default function About() {
+  React.useEffect(function () {
+          document.title = "Sanghoon Kim | Personal Web Page";
+  }, []);
+
   return (
     <div>
       <h1>About</h1>
