@@ -11,10 +11,10 @@ html, body {
 .ap-shell { display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
 .ap-sidebar { border-right: 1px solid #e5e7eb; padding: 18px; position: sticky; top: 0; height: 100vh; overflow: auto; }
 .ap-main { padding: 28px; max-width: 980px; }
-.ap-avatar { width: 120px; height: 150px; border-radius: 12px; object-fit: cover; display: block; margin: 0 auto; }
+.ap-avatar { width: 120px; height: 150px; border-radius: 14px; object-fit: cover; display: block; margin: 0 auto; }
 .ap-profile { text-align: center; }
 .ap-name { font-weight: 700; margin-top: 10px; }
-.ap-bio { margin-top: 6px; opacity: 0.8; font-size: 14px; }
+.ap-bio { margin-top: 6px; opacity: 0.8; font-size: 13px; }
 .ap-links a { display: inline-block; margin-right: 10px; font-size: 14px; }
 .ap-nav { margin-top: 18px; display: grid; gap: 8px; justify-items: center;}
 .ap-navlink { text-decoration: none; color: inherit; opacity: 0.85; }
