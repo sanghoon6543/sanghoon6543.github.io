@@ -68,6 +68,9 @@ export default function AcademicLayout(props) {
           <div className="ap-profile--footer">
               <ProfileBlock showInlineCopy={true} inlineCopyText={"© " + new Date().getFullYear() + " " + author.name}/>
           </div>
+          <div className="ap-footer-copy--desktop">
+              © {new Date().getFullYear()} {author.name}
+          </div>
         </footer>
       </main>
     </div>

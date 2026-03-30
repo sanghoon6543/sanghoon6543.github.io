@@ -8,6 +8,7 @@ html, body {
 .ap-profile--footer { display: none; }
 .ap-profile--desktop { display: block; }
 .ap-footer-copy { margin-top: 12px; opacity: 0.7; font-size: 13px;}
+.ap-footer-copy--desktop { display: block; }
 .ap-shell { display: grid; grid-template-columns: 280px 1fr; min-height: 100vh; }
 .ap-sidebar { border-right: 1px solid #e5e7eb; padding: 18px; position: sticky; top: 0; height: 100vh; overflow: auto; }
 .ap-main { padding: 28px; max-width: 980px; }
@@ -23,6 +24,7 @@ html, body {
 
 @media (max-width: 900px) {
   .ap-profile--desktop { display: none; }
+  .ap-footer-copy--desktop { display: none; }
   .ap-profile--footer { display:block; padding-top: 16px; margin-top: 10px; border-top: none; }
 
   .ap-footer { --avatar-size: 80px; --avatar-gap: 30px;
