@@ -1,0 +1,72 @@
+[
+  {
+    "id": "Vieworks-5",
+    "title": "[6] SWIR Bio Imaging System (2026 - Present)",
+    "summary": [
+      "This project concentrated on pioneering applications, where visible imaging fails. I focused on creating specialized tools due to limited existing research.",
+      "I developed custom SWIR systems: cameras, microscopes, and spectroscopy. I successfully built a SWIR microscope to non-destructively observe silicon transparency phenomena. Optimizing the optical design, the system achieved a double SNR compared to conventional instruments.",
+      "My roles included application planning, optical design/assembly, characterization, and unconventional data analysis.",
+      "We are currently studying on hyperspectral imaging with coded aperture."
+    ],
+    "tags": ["SWIR", "Bio Imaging", "Hyperspectral", "Coded Aperture", "Image Sensors"]
+  },
+
+
+    {
+    "id": "Vieworks-4",
+    "title": "[5] SWIR Image Sensors based on Quantum Dot (2024 - Present)",
+    "summary": [
+      "This project focuses on developing monolithic image sensors using the PbS QDs(quantum dots) for SWIR(Short-Wavelength InfraRed).",
+      "Through optoelectronic device modelling, we achieved 10% EQE with a 200nA/cm2 dark current density.",
+      "My primary roles include device architecture design, optoelectronic evaluation, property analysis guiding subsequent design stage",
+      "We are currently preparing to commercialize this image sensor."
+    ],
+    "tags": ["Quantum Dots", "Nanophotonics", "SWIR", "Image Sensors"]
+  },
+
+
+  {
+    "id": "Vieworks-3",
+    "title": "[4] Direct X-Ray Detectors based on Quantum Dot (2023 - 2025)",
+    "summary": [
+      "This project focuses on developing monolithic image sensors using the PbS QDs(quantum dots) for X-Ray mammographic detectors",
+      "Through optoelectronic device modelling, we achieved 40µC/(Gy cm2) sensitivity with 5nA/cm2 dark current density for X-Ray.",
+      "My primary roles include device architecture design, optoelectronic evaluation, property analysis guiding subsequent design stages. We are currently investigating the QD size effect on X-Ray detection performance."
+    ],
+    "tags": ["Quantum Dots", "Direct X-Ray Detectors"]
+  },
+
+
+  {
+    "id": "Vieworks-2",
+    "title": "[3] Metasurface for High Spatial Resolution indirect X-Ray Detectors (2023 - Present)",
+    "summary": [
+      "This project addressed the fundamental limitation in spatial resolution of indirect X-Ray detectors caused by isotropic radiation within scintillators.",
+      "I proposed and developed a solution embedding metasurfaces between the scintillators and image sensors to compensate and focus the light. This novel approach resulted in quadruple enhancement of MTF from 0.15 to 0.6.",
+      "My roles included conceptualizing the idea, metasurface design, optical simulation, and MTF calculation. Currently, we investigate simplified metasurfaces via inverse design."
+    ],
+    "tags": ["Metasurface", "Nanophotonics", "Inverse Design", "Indirect X-Ray Detectors"]
+  },
+
+  {
+    "id": "Vieworks-1",
+    "title": "[2] Surface Enhanced Raman Scattering for Point of Care Testing (2021 - 2023)",
+    "summary": [
+      "This project focused on developing a Laser Scanning Raman spectroscope to quantitatively measure SERS from Au nanoparticles and Raman indicators in fluid.",
+      "Leveraging nanoparticle physics, I designed and developed an instrument specifically to enhance reproducibility. By implementing spatiotemporal ensemble averaging and outlier sorting, I reduced the SERS intensity coefficients of variation from 40% to 15%.",
+      "My primary roles involved understanding physics, designing and developing optical instruments, and data analysis via custom algorithms."
+    ],
+    "tags": ["SERS", "Laser Scanning Raman Spectroscope", "Nanophotonics"]
+  },
+
+  {
+    "id": "Master",
+    "title": "[1] Graphene based Optoelectronic Device (2016 - 2018)",
+    "summary": [
+      "This project empirically demonstrated photodoping effect in a graphene-perovskite heterostructure.",
+      "Photocurrent measurements estimated the photodoping level to be approximately 3E+12/cm2 at zero gate bias, corresponding to Fermi energy variation from 0.37 to 0.43eV. This is sufficient to operate graphene-based active photonic devices at mid-infrared frequencies, providing an alternative to electrostatic gating.",
+      "My primary roles included device design and fabrication, optoelectronic evaluation, and property analysis applied to subsequent design stages."
+    ],
+    "tags": ["Graphene", "Optoelectronic Device", "Nanophotonics"]
+  }
+]

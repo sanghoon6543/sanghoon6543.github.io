@@ -22,6 +22,13 @@ html, body {
 .ap-navlink.active { font-weight: 700; opacity: 1; }
 .ap-footer { margin-top: 60px; border-top: 1px solid #e5e7eb; padding-top: 14px; opacity: 0.7; font-size: 13px; }
 
+.proj-item { padding: 18px 0;}
+.proj-item + .proj-item { border-top: 1px solid #e5e7eb; }
+.proj-title { margin: 0; font-size: 16px; }
+.proj-summary { margin: 10px 0 10px; opacity: 0.85; }
+.proj-links a { margin-right: 12px; font-size: 14px; }
+
+
 @media (max-width: 900px) {
   .ap-profile--desktop { display: none; }
   .ap-footer-copy--desktop { display: none; }
