@@ -1,4 +1,15 @@
 import React from "react";
+import sections from "../data/about.json"
+
+function Figure(props){
+    var img = props.img;
+    return (
+        <figure className = "about-figure">
+            <img className = "about-img" src={img.src} alt={img.alt || ""} />
+            {img.caption ? <figcaption className="about-caption">{img.caption}</figcaption>:null}
+        </figure>
+    );
+}
 
 export default function About() {
   React.useEffect(function () {
@@ -7,38 +18,48 @@ export default function About() {
 
   return (
     <div>
-      <h1>About</h1>
-       <figure style = {{ textAlign: "center", margin: "16px 0"}}>
-           <img
-              src = "/images/Electromagnetic Spectrum.jpg"
-              alt = "ElectroMagnetic Spectrum"
-              style = {{ width: "min(360px, 100%)", height: "auto", display: "block", margin: "12px auto", borderRadius: 12}} />
-          <figcaption style = {{ marginTop: 8, fontSize: 10, opacity: 0.75}}>
-              Image from wikipedia
-          </figcaption>
-       </figure>
-
-      <p> My research interest is obtaining information from the electromagnetic-matter interaction.
-          I consistently explored nanomaterials interacting with electromagnetic waves beyond the visible,
-          including physics calculation, optoelectronic device modelling, device evaluation, and
-          constructing optical instruments to characterize the device. </p>
-
-       <figure style = {{ textAlign: "center", margin: "16px 0"}}>
-          <img
-              src = "/images/EM-Wave.gif"
-              alt = "ElectroMagnetic Wave"
-              style = {{ width: "min(360px, 100%)", height: "auto", display: "block", margin: "12px auto", borderRadius: 12}} />
-            <figcaption style = {{ marginTop: 8, fontSize: 10, opacity: 0.75}}>
-              Image from wikipedia
-          </figcaption>
-       </figure>
-
-      <p> Humans perceive the intensity of wavelength from 400nm to 700nm as visible image,
-          and this visual information significantly influences recognition both on biological and intelligent systems.
-          Based on such stimuli, they react and predict future states. Although the visible provides abundant data,
-          electromagnetic waves possess many other parameters, and these would be valuable as X-Ray did. Based on the
-          understanding physical phenomena of electromagnetics, I aspire to pave and interpret novel forms of beneficial
-          information beyond our eyes. </p>
+{/*       <h1>About</h1> */}
+        <div className="about-list">
+            {sections.map(function (s) {
+                return (
+                    <section key={s.id} className="about-item" id={s.id}>
+                        <h2 className="about-title">{s.title}</h2>
+                         {(s.paragraph || []).map(function (text, idx) {
+                          return (<p key={s.id + "-p-" + idx} className="about-p">{text}</p>);
+                         })}
+                         {(s.images || []).map(function (img, idx) {
+                          return <Figure key={s.id + "-img-" + idx} img={img} />;
+                         })}
+                     </section>
+                );
+            })}
+        </div>
     </div>
-  );
+  )
 }
+//        <figure style = {{ textAlign: "center", margin: "16px 0"}}>
+//            <img
+//
+//            "style": {{ }} />,
+//
+//           <figcaption style = {{ }}>
+//               Image from wikipedia
+//           </figcaption>
+//        </figure>
+//
+//       <p>  </p>
+//
+//        <figure style = {{ textAlign: "center", margin: "16px 0"}}>
+//           <img
+//               src = "/images/EM-Wave.gif"
+//               alt = "ElectroMagnetic Wave"
+//               style = {{ width: "min(360px, 100%)", height: "auto", display: "block", margin: "12px auto", borderRadius: 12}} />
+//             <figcaption style = {{ marginTop: 8, fontSize: 10, opacity: 0.75}}>
+//               Image from wikipedia
+//           </figcaption>
+//        </figure>
+//
+//       <p>  </p>
+//     </div>
+//   );
+// }
