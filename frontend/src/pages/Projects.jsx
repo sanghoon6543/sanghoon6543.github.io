@@ -27,8 +27,12 @@ export default function Projects() {
 
   return (
     <div>
-      <h1> Projects </h1>
-      <div className="proj-list">
+        <div style={{display:"flex", alignItems: "baseline", gap: 10 }}>
+          <h1 style={{margin:0}}> Projects </h1>
+          <a href="/files/projects/Kim, Sang Hoon (Research Experience Summary).pdf" target="_blank" rel="noreferrer">
+           [PDF] </a>
+        </div>
+        <div className="proj-list">
           {projects.map(function (p) {
               return (
                   <div key={p.id} className="proj-item">
@@ -53,7 +57,7 @@ export default function Projects() {
                   </div>
               );
           })}
-      </div>
+        </div>
     </div>
   );
 }
