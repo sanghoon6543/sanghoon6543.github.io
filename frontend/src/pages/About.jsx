@@ -4,9 +4,9 @@ import sections from "../data/about.json"
 function Figure(props){
     var img = props.img;
     return (
-        <figure className = "about-figure">
-            <img className = "about-img" src={img.src} alt={img.alt || ""} />
-            {img.caption ? <figcaption className="about-caption">{img.caption}</figcaption>:null}
+        <figure className = "figure">
+            <img className = "img" src={img.src} alt={img.alt || ""} />
+            {img.caption ? <figcaption className="img-caption">{img.caption}</figcaption>:null}
         </figure>
     );
 }
@@ -22,10 +22,10 @@ export default function About() {
         <div className="about-list">
             {sections.map(function (s) {
                 return (
-                    <section key={s.id} className="about-item" id={s.id}>
-                        <h2 className="about-title">{s.title}</h2>
+                    <section key={s.id} className="item" id={s.id}>
+                        <h2 className="title">{s.title}</h2>
                          {(s.paragraph || []).map(function (text, idx) {
-                          return (<p key={s.id + "-p-" + idx} className="about-p">{text}</p>);
+                          return (<p key={s.id + "-p-" + idx} className="paragraph">{text}</p>);
                          })}
                          {(s.images || []).map(function (img, idx) {
                           return <Figure key={s.id + "-img-" + idx} img={img} />;

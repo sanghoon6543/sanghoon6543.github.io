@@ -1,6 +1,11 @@
 html, body {
     font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    height: 100%; margin: 0;
 }
+
+body{ display: block !important; }
+
+#root { min-height: 100vh; display: block !important; width: 100%; }
 
 * {
     font-family: inherit;
@@ -22,20 +27,23 @@ html, body {
 .ap-navlink.active { font-weight: 700; opacity: 1; }
 .ap-footer { margin-top: 60px; border-top: 1px solid #e5e7eb; padding-top: 14px; opacity: 0.7; font-size: 13px; }
 
-.about-item { padding: 18px 0; }
-.about-item + .about-item { border-top: 1px solid #e5e7eb; }
-.about-title { margin: 0 0 10px; font-size: 18px; }
-.about-p { margin: 0 0 8px; opacity: 0.85; }
-.about-figure { margin: 16px 0 0; text-align: center; }
-.about-img { width: min(360px, 100%); height: auto; display: block; margin: 12px auto; border-radius: 12px; }
-.about-caption { margin-top: 8px; font-size: 10px; opacity: 0.75; }
+.item { padding: 18px 0; }
+.item + .item { border-top: 1px solid #e5e7eb; }
+.title { margin: 0 0 10px; font-size: 18px; }
+.paragraph { margin: 0 0 8px; opacity: 0.85; }
+.figure { margin: 16px 0 0; text-align: center; }
+.img { width: min(360px, 100%); height: auto; display: block; margin: 12px auto; border-radius: 12px; }
+.img-caption { margin-top: 8px; font-size: 10px; opacity: 0.75; }
+.links { margin-top: 8px; }
+.links a { margin-right: 12px; font-size: 14px; }
 
-.proj-item { padding: 18px 0;}
-.proj-item + .proj-item { border-top: 1px solid #e5e7eb; }
-.proj-title { margin: 0; font-size: 16px; }
-.proj-summary { margin: 10px 0 10px; opacity: 0.85; }
-.proj-links a { margin-right: 12px; font-size: 14px; }
-
+.tabs { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0 16px; }
+.tab { border: 1px solid #e5e7eb; background: transparent; padding: 6px 10px; border-radius: 999px; cursor: pointer;
+           font: inherit; opacity: 0.85; }
+.tab.active { opacity: 1; font-weight: 700; }
+.arc-top { display: flex; justify-content: space-between; gap: 12px; }
+.arc-title { font-weight: 700; }
+.arc-year { opacity: 0.7; white-space: nowrap; }
 
 @media (max-width: 900px) {
   .ap-profile--desktop { display: none; }
@@ -51,7 +59,7 @@ html, body {
                                    width: var(--avatar-size); height: calc(var(--avatar-size) * 1.25); border-radius: 12px; }
   .ap-profile--footer .ap-name { grid-column: 2; grid-row: 1; margin: 0; text-align: left; }
   .ap-profile--footer .ap-bio { grid-column: 2; grid-row: 2; margin: 0; font-size: 13px; opacity: 0.8; text-align: left;
-                                white-space: nowrap}
+                                white-space: nowrap; }
   .ap-profile--footer .ap-links { display: flex; flex-direction: column; align-items: flex-start;
                                   row-gap: 6px; margin-top: 2px;}
   .ap-profile--footer .ap-links-left { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -78,12 +86,12 @@ html, body {
 
   .ap-navlink {
     text-decoration: none;
-    color: inherit
+    color: inherit;
     padding: 6px 8px;
     opacity: 0.8;
   }
 
-  .ap-npvlink.active{
+  .ap-navlink.active{
     font-weight: 700;
     opacity: 1;
     border-bottom: 2px solid currentColor;

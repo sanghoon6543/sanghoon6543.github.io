@@ -12,7 +12,7 @@ function Pill(props){
          border: "1px solid #e5e7eb",
          fontSize: 12,
          marginRight: 8,
-         marginBbottom: 8
+         marginBottom: 8
      }}
     >
      {props.children}
@@ -35,13 +35,13 @@ export default function Projects() {
         <div className="proj-list">
           {projects.map(function (p) {
               return (
-                  <div key={p.id} className="proj-item">
+                  <div key={p.id} className="item">
                       <div className="proj-header">
-                         <h3 className="proj-title">{p.title}</h3>
+                         <h3 className="title">{p.title}</h3>
                       </div>
 
                       {(p.summary || []).map(function (line, idx) {
-                          return <p key={p.id + "-s-" + idx} className="proj-summary">{line}</p>;
+                          return <p key={p.id + "-s-" + idx} className="paragraph">{line}</p>;
                       })}
 
                       <div className="proj-tags">
@@ -49,7 +49,7 @@ export default function Projects() {
                               return <Pill key={t}>{t}</Pill>;
                           })}
                       </div>
-                      <div className="proj-links">
+                      <div className="links">
                           {(p.links || []).map(function (l){
                               return (<a key={l.href} href={l.href} target="_blank" rel="noreferrer"> {l.label} </a>);
                           })}
