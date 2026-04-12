@@ -37,7 +37,7 @@
       "venue": "Photonics Conference",
       "type": "Oral",
       "links": [
-        { "label": "PDF", "href": "/files/pubs/PC2025_slide.pdf"}
+        { "label": "Slide", "href": "/files/pubs/PC2025_slide.pdf"}
       ]
     },
 
@@ -49,6 +49,8 @@
       "venue": "NANO Korea",
       "type": "Oral",
       "links": [
+        { "label": "Abstract", "href": "/files/pubs/NK2018_abstract.pdf"},
+        { "label": "Slide", "href": "/files/pubs/NK2018_slide.pdf"}
       ]
     }
 

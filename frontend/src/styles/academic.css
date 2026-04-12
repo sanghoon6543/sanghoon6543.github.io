@@ -78,13 +78,17 @@ body{ display: block !important; }
 
   .ap-nav {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 12px;
-    justify-content: center;
-    margin-top: 0px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    scrollbar-width: none;
   }
 
   .ap-navlink {
+    white-space: nowrap;
     text-decoration: none;
     color: inherit;
     padding: 6px 8px;
@@ -96,5 +100,7 @@ body{ display: block !important; }
     opacity: 1;
     border-bottom: 2px solid currentColor;
   }
+
+  .ap-nav::-webkit-scrollbar {display: none;}
 
 }
