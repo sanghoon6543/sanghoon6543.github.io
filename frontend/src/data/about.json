@@ -1,5 +1,19 @@
 [
   {
+    "id": "introduction",
+    "title": "About me",
+    "paragraph": [
+      "Kim, Sang Hoon",
+      "Beyond Visible Image Sensor R&D Engineer",
+      "SWIR · X-ray · Nanophotonics · Sensor Characterization · Imaging Systems",
+
+      "5+ years in image sensor R&D",
+      "M.S. in Electrical Engineering, KAIST",
+      "SCIE first-author paper · SPIE oral presentation · International patents"
+
+    ]
+  },
+  {
     "id": "research interest",
     "title": "Research Interest",
     "paragraph": ["My research interest is obtaining information from the electromagnetic-matter interaction. I consistently explored nanomaterials interacting with electromagnetic waves beyond the visible, including physics calculation, optoelectronic device modelling, device evaluation, and constructing optical instruments to characterize the device."
