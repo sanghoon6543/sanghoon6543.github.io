@@ -20,6 +20,17 @@ function Pill(props){
   );
 }
 
+function renderBoldText(text, keyPrefix) {
+    var parts = String(text || "").split("**");
+    var out = [];
+    for (var i = 0; i < parts.length; i++) {
+        var key = keyPrefix + "-b-" + i;
+        if (i % 2 === 1) out.push(<strong key={key}>{parts[i]}</strong>);
+        else out.push(<span key={key}>{parts[i]}</span>);
+        }
+    return out;
+}
+
 export default function Projects() {
   React.useEffect(function () {
           document.title = "Projects | Sanghoon Kim";
@@ -41,7 +52,7 @@ export default function Projects() {
                       </div>
 
                       {(p.summary || []).map(function (line, idx) {
-                          return <p key={p.id + "-s-" + idx} className="paragraph">{line}</p>;
+                          return <p key={p.id + "-s-" + idx} className="paragraph">{renderBoldText(line, p.id + "-s-" + idx)}</p>;
                       })}
 
                       <div className="proj-tags">

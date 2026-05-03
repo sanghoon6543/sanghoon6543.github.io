@@ -1,8 +1,12 @@
 {
   "name": "Kim, Sang Hoon",
-  "bio": "ElectroMagnetics beyond the Visible",
+  "bio": ["Beyond Visible Image Sensor R&D Engineer",
+          "SWIR · X-ray · Nanophotonics",
+          "Sensor Characterization · Imaging Systems"
+         ],
   "avatarUrl": "/images/Kim, Sanghoon.jpg",
   "links": [
-    { "label": "GitHub", "href": "https://github.com/sanghoon6543" }
+    { "type": "link", "label": "GitHub", "href": "https://github.com/sanghoon6543" },
+    { "type":  "text", "label": "E-mail", "value": "sanghoon6543 [at] gmail.com" }
   ]
 }

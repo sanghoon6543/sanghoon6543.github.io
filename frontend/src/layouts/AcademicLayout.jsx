@@ -10,20 +10,32 @@ function ProfileBlock(props){
     <div className="ap-profile">
       <img className="ap-avatar" src={author.avatarUrl} alt="profile" />
       <div className="ap-name">{author.name}</div>
-      <div className="ap-bio">{author.bio}</div>
+
+      {Array.isArray(author.bio) ? (
+          <div className="ap-bio">
+              {author.bio.map(function (line, idx) {
+                  return (
+                      <div key={"bio-" + idx} className="ap-bio-line">
+                        {line}
+                      </div>
+                  );
+              })}
+          </div>
+      ) : (
+          author.bio ? <div className="ap-bio">{author.bio}</div> : null
+      )}
 
       <div className="ap-links">
         <div className="ap-links-left">
-            {author.links.map(function (l) {
-              return (
-                <a key={l.href} href={l.href} target="_blank" rel="noreferrer">
-                  {l.label}
-                </a>
-              );
+            {author.links.map(function (l, idx) {
+                if (l.type === "text") {
+                    return (<span key={"text-" + idx} className="ap-linklike">{l.label ? l.label + ": " : ""}{l.value}</span>);
+                }
+                return (<a key={l.href} href={l.href} target="_blank" rel="noreferrer">{l.label}</a>);
             })}
-          </div>
-          {showInlineCopy ? ( <div className="ap-footer-copy ap-footer-copy--inline">{inlineCopyText}</div>) : null}
         </div>
+        {showInlineCopy ? ( <div className="ap-footer-copy ap-footer-copy--inline">{inlineCopyText}</div>) : null}
+      </div>
     </div>
   );
 }
