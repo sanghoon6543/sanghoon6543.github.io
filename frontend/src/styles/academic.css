@@ -34,6 +34,7 @@ body{ display: block !important; }
 .title { margin: 0 0 10px; font-size: 18px; }
 .paragraph { margin: 0 0 8px; opacity: 0.85; }
 .figure { margin: 16px 0 0; text-align: center; }
+.figure + .paragraph { margin-top: 18px;}
 .img { width: min(360px, 100%); height: auto; display: block; margin: 12px auto; border-radius: 12px; }
 .img-caption { margin-top: 8px; font-size: 10px; opacity: 0.75; }
 .ap-bio-line { margin-top: 2px; }

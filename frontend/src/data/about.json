@@ -1,42 +1,33 @@
 [
   {
     "id": "introduction",
-    "title": "About me",
-    "paragraph": [
-      "Kim, Sang Hoon",
-      "Beyond Visible Image Sensor R&D Engineer",
-      "SWIR · X-ray · Nanophotonics · Sensor Characterization · Imaging Systems",
-
-      "5+ years in image sensor R&D",
-      "M.S. in Electrical Engineering, KAIST",
-      "SCIE first-author paper · SPIE oral presentation · International patents"
-
+    "title": "About Me",
+    "blocks": [
+      { "type":  "p", "text": "Kim, Sang Hoon"},
+      { "type":  "p", "text": "Beyond Visible Image Sensor R&D Engineer" },
+      { "type":  "p", "text": "SWIR · X-ray · Nanophotonics · Sensor Characterization · Imaging Systems"},
+      { "type":  "p", "text": "5+ years in image sensor R&D" },
+      { "type":  "p", "text": "M.S. in Electrical Engineering, KAIST"}
     ]
   },
+
   {
-    "id": "research interest",
+    "id": "research-interest",
     "title": "Research Interest",
-    "paragraph": ["My research interest is obtaining information from the electromagnetic-matter interaction. I consistently explored nanomaterials interacting with electromagnetic waves beyond the visible, including physics calculation, optoelectronic device modelling, device evaluation, and constructing optical instruments to characterize the device."
-    ],
-    "images": [
-      {
-        "src": "/images/about/Electromagnetic Spectrum.jpg",
-        "alt": "ElectroMagnetic Spectrum",
-        "caption": "Image from wikipedia"
-      }
+    "blocks": [
+      { "type":  "p", "text": "My research interest is obtaining information from the electromagnetic-matter interaction. I consistently explored nanomaterials interacting with electromagnetic waves beyond the visible, including physics calculation, optoelectronic device modelling, device evaluation, and constructing optical instruments to characterize the device."},
+      { "type":  "img", "src": "/images/about/Electromagnetic Spectrum.jpg", "alt": "ElectroMagnetic Spectrum", "caption": "Image from wikipedia"}
     ]
   },
+
   {
-    "id": "examples overview",
+    "id": "examples-overview",
     "title": "More Details",
-    "paragraph": ["Humans perceive the intensity of wavelength from 400nm to 700nm as visible image, and this visual information significantly influences  recognition both on biological and intelligent systems.",
-    "Based on such stimuli, they react and predict future states. Although the visible provides abundant data, electromagnetic waves possess many other parameters, and these would be valuable as X-Ray did. Based on the understanding physical phenomena of electromagnetics, I aspire to pave and interpret novel forms of beneficial information beyond our eyes."],
-    "images": [
-      {
-        "src": "/images/about/EM-Wave.gif",
-        "alt": "ElectroMagnetic Wave",
-        "caption": "Image from wikipedia"
-      }
+    "blocks": [
+      { "type":  "p", "text": "Humans perceive the intensity of wavelength from 400nm to 700nm as visible image, and this visual information significantly influences  recognition both on biological and intelligent systems."},
+      { "type":  "p", "text": "Based on such stimuli, they react and predict future states. Although the visible provides abundant data, electromagnetic waves possess many other parameters, and these would be valuable as X-Ray did. Based on the understanding physical phenomena of electromagnetics, I aspire to pave and interpret novel forms of beneficial information beyond our eyes."},
+      { "type":  "img", "src": "/images/about/EM-Wave.gif", "alt": "ElectroMagnetic Wave", "caption": "Image from wikipedia"},
+      { "type":  "p", "text": "I study beyond-human eye information through optoelectronic sensors, and my strength is building automated characterization platforms that connect sensor physics to imaging system performance."}
     ]
   }
 ]

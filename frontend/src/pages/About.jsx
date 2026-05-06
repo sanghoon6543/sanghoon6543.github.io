@@ -1,15 +1,27 @@
 import React from "react";
 import sections from "../data/about.json"
 
-function Figure(props){
-    var img = props.img;
-    return (
-        <figure className = "figure">
-            <img className = "img" src={img.src} alt={img.alt || ""} />
-            {img.caption ? <figcaption className="img-caption">{img.caption}</figcaption>:null}
-        </figure>
-    );
+function Figure(props) {
+  var img = props.img;
+  return (
+    <figure className="figure">
+      <img className="img" src={img.src} alt={img.alt || ""} />
+      {img.caption ? <figcaption className="caption">{img.caption}</figcaption> : null}
+    </figure>
+  );
 }
+
+function Block(props){
+    var b = props.block;
+    if (b.type === "p") {
+        return <p className="paragraph">{b.text}</p>;
+    }
+    if (b.type === "img") {
+        return <Figure img={{ src: b.src, alt: b.alt, caption: b.caption }} />;
+    }
+    return null;
+}
+
 
 export default function About() {
   React.useEffect(function () {
@@ -24,11 +36,8 @@ export default function About() {
                 return (
                     <section key={s.id} className="item" id={s.id}>
                         <h2 className="title">{s.title}</h2>
-                         {(s.paragraph || []).map(function (text, idx) {
-                          return (<p key={s.id + "-p-" + idx} className="paragraph">{text}</p>);
-                         })}
-                         {(s.images || []).map(function (img, idx) {
-                          return <Figure key={s.id + "-img-" + idx} img={img} />;
+                         {(s.blocks || []).map(function (b, idx) {
+                          return <Block key={s.id + "-b-" + idx} block={b} />;
                          })}
                      </section>
                 );
