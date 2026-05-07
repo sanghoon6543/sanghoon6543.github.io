@@ -5,9 +5,10 @@
     "blocks": [
       { "type":  "p", "text": "Kim, Sang Hoon"},
       { "type":  "p", "text": "Beyond Visible Image Sensor R&D Engineer" },
-      { "type":  "p", "text": "SWIR · X-ray · Nanophotonics · Sensor Characterization · Imaging Systems"},
       { "type":  "p", "text": "5+ years in image sensor R&D" },
-      { "type":  "p", "text": "M.S. in Electrical Engineering, KAIST"}
+      { "type":  "p", "text": "M.S. in Electrical Engineering, KAIST"},
+      { "type":  "p", "text": "SWIR · X-ray · Nanophotonics · Sensor Characterization · Imaging Systems"},
+      { "type":  "p", "text": "I study how useful information can be extracted from electromagnetic-matter interactions beyond the visible, using SWIR, X-Ray, SPAD, and nanophotonic sensing systems."}
     ]
   },
 
@@ -15,19 +16,34 @@
     "id": "research-interest",
     "title": "Research Interest",
     "blocks": [
-      { "type":  "p", "text": "My research interest is obtaining information from the electromagnetic-matter interaction. I consistently explored nanomaterials interacting with electromagnetic waves beyond the visible, including physics calculation, optoelectronic device modelling, device evaluation, and constructing optical instruments to characterize the device."},
-      { "type":  "img", "src": "/images/about/Electromagnetic Spectrum.jpg", "alt": "ElectroMagnetic Spectrum", "caption": "Image from wikipedia"}
+      { "type":  "p", "text": "Humans perceive the intensity of wavelength from 400nm to 700nm as visible image, and this visual information significantly influences  recognition both on biological and intelligent systems. Based on such stimuli, they react and predict future states. Although the visible provides abundant data, electromagnetic waves possess many other parameters, and these would be valuable as X-Ray did."},
+      { "type":  "img", "src": "/images/about/Electromagnetic Spectrum.jpg", "alt": "ElectroMagnetic Spectrum", "caption": "Image from wikipedia"},
+      { "type":  "p", "text": "My research interest is to pave and interpret novel forms of beneficial information beyond our eyes through obtaining electromagnetic information by using sensing system"},
+      { "type":  "img", "src": "/images/about/EM-Wave.gif", "alt": "ElectroMagnetic Wave", "caption": "Image from wikipedia"}
     ]
   },
 
   {
-    "id": "examples-overview",
-    "title": "More Details",
+    "id": "research-approach",
+    "title": "Research Approach: Characterization → Analysis → Understand Physics → Design Direction",
     "blocks": [
-      { "type":  "p", "text": "Humans perceive the intensity of wavelength from 400nm to 700nm as visible image, and this visual information significantly influences  recognition both on biological and intelligent systems."},
-      { "type":  "p", "text": "Based on such stimuli, they react and predict future states. Although the visible provides abundant data, electromagnetic waves possess many other parameters, and these would be valuable as X-Ray did. Based on the understanding physical phenomena of electromagnetics, I aspire to pave and interpret novel forms of beneficial information beyond our eyes."},
-      { "type":  "img", "src": "/images/about/EM-Wave.gif", "alt": "ElectroMagnetic Wave", "caption": "Image from wikipedia"},
-      { "type":  "p", "text": "I study beyond-human eye information through optoelectronic sensors, and my strength is building automated characterization platforms that connect sensor physics to imaging system performance."}
+      { "type":  "p", "text": "In beyond-visible sensor research, my role is to characterize sensor behavior, analyze the underlying performance limits, and provide design directions for the next device or system iteration."},
+      { "type":  "p", "text": "I use automated characterization workflows not as an end goal, but as a research tool to connect device-level physics with imaging-system performance."}
+    ]
+  },
+
+  {
+    "id": "technical-platform",
+    "title": "Technical Platform",
+    "blocks": [
+      { "type":  "p", "text": "Python-based sensor characterization and analysis platforms"},
+      { "type":  "p", "text": "- Instrument control using Python / PyVISA"},
+      { "type":  "p", "text": "- GUI development using PyQt and tkinter"},
+      { "type":  "p", "text": "- Automated control of source meters, DAQ units, monochromators, spectrometers, and probe stations"},
+      { "type":  "p", "text": "- Extraction of sensor metrics: Dark current, EQE, responsivity, detectivity, time response, temporal noise, SNR, DSNU, PRNU, DCR, PDP, and MTF"},
+      { "type":  "p", "text": "- Sensor-specific debugging and design feedback"}
     ]
   }
+
+
 ]
