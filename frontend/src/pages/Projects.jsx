@@ -1,23 +1,59 @@
 // frontend/src/pages/Projects.jsx
 import React from "react";
-import projects from "../data/projects.json"
+import { NavLink, useParams, Navigate } from "react-router-dom";
+import projectData from "../data/projects.json";
+
+function getCategoryById(categoryId) {
+    var categories = projectData.categories || [];
+
+    for (var i = 0; i < categories.length; i++) {
+        if (categories[i].id === categoryId) { return categories[i]; }
+    }
+    return null;
+}
+
+function getProjectById(projectId) {
+    var projectList = projectData.projects || [];
+    for (var i = 0; i < projectList.length; i++) {
+        if (projectList[i].id === projectId) { return projectList[i]; }
+    }
+    return null;
+}
 
 function Pill(props){
-  return (
-    <span
-     style={{
-         display: "inline-block",
-         padding: "4px 10px",
-         borderRadius: 999,
-         border: "1px solid #e5e7eb",
-         fontSize: 12,
-         marginRight: 8,
-         marginBottom: 8
-     }}
-    >
-     {props.children}
-    </span>
-  );
+  return <span className="pill">{props.children}</span>;
+}
+
+function ProjectItem(props) {
+    var p = props.project;
+    var displayNumber = props.displayNumber;
+
+    return (
+        <div className = "item">
+            <div className = "top">
+                <h3 className = "title">
+                    <span className="number">[{displayNumber}] </span>
+                    {p.title}
+                    {p.period ? <span className="proj-period"> ({p.period})</span> : null}
+                </h3>
+            </div>
+
+            {(p.summary || []).map(function (line, idx) {
+                  return <p key={p.id + "-s-" + idx} className="paragraph">{renderBoldText(line, p.id + "-s-" + idx)}</p>;
+            })}
+
+            <div className="tags">
+                {(p.tags || []).map(function (t) {
+                    return <Pill key={t}>{t}</Pill>;
+                })}
+            </div>
+            <div className="links">
+                {(p.links || []).map(function (l){
+                    return (<a key={l.href} href={l.href} target="_blank" rel="noreferrer"> {l.label} </a>);
+                })}
+            </div>
+        </div>
+    );
 }
 
 function renderBoldText(text, keyPrefix) {
@@ -35,39 +71,39 @@ export default function Projects() {
   React.useEffect(function () {
           document.title = "Projects | Sanghoon Kim";
   }, []);
+  var params = useParams();
+  var categoryId = params.categoryId || "featured";
+  var category = getCategoryById(categoryId);
+  if (!category) { return <Navigate to="/projects/featured" replace />; }
 
   return (
     <div>
         <div style={{display:"flex", alignItems: "baseline", gap: 10 }}>
           <h1 style={{margin:0}}> Projects </h1>
           <a href="/files/projects/Kim, Sang Hoon (Research Experience Summary).pdf" target="_blank" rel="noreferrer">
-           [PDF] </a>
+           [Overview PDF] </a>
         </div>
-        <div className="proj-list">
-          {projects.map(function (p) {
+        <div className="tabs">
+          {(projectData.categories || []).map(function (c) {
               return (
-                  <div key={p.id} className="item">
-                      <div className="proj-header">
-                         <h3 className="title">{p.title}</h3>
-                      </div>
-
-                      {(p.summary || []).map(function (line, idx) {
-                          return <p key={p.id + "-s-" + idx} className="paragraph">{renderBoldText(line, p.id + "-s-" + idx)}</p>;
-                      })}
-
-                      <div className="proj-tags">
-                          {(p.tags || []).map(function (t) {
-                              return <Pill key={t}>{t}</Pill>;
-                          })}
-                      </div>
-                      <div className="links">
-                          {(p.links || []).map(function (l){
-                              return (<a key={l.href} href={l.href} target="_blank" rel="noreferrer"> {l.label} </a>);
-                          })}
-                      </div>
-                  </div>
-              );
+                  <NavLink key={c.id} to={"/projects/" + c.id} className="tab">{c.label}</NavLink>);
           })}
+        </div>
+
+        <h2 className = "title">{category.label}</h2>
+
+        <div className="proj-list">
+            {(category.projectIds || []).map(function (projectId, idx) {
+                var project = getProjectById(projectId);
+                var total = category.projectIds.length;
+                var displayNumber = total - idx;
+
+                if (!project) {
+                    return null;
+                }
+
+                return <ProjectItem key={project.id} project={project} displayNumber={displayNumber}/>;
+            })}
         </div>
     </div>
   );

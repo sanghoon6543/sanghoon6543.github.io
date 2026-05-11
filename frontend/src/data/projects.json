@@ -1,80 +1,131 @@
-[
-  {
-    "id": "Vieworks-5",
-    "title": "[6] SWIR Bio Imaging System (2026 - Present)",
-    "summary": [
-      "**Goal:** Pioneering applications, where visible imaging fails.",
-      "**Key Results:** SWIR Hyperspectral Imaging System",
-      "**My Role**: Planning application, Optical design/assembly, characterization, and physics-guided data analysis",
-      "**Skills:** Ray Optics Simulation, Image Processing, Algorithm Development, Python",
-      "We are currently studying hyperspectral imaging with coded aperture."
-    ],
-    "tags": ["SWIR", "Bio Imaging", "Hyperspectral", "Coded Aperture", "Image Sensors"]
-  },
-
-
+{
+  "categories": [
     {
-    "id": "Vieworks-4",
-    "title": "[5] SWIR Image Sensors based on Quantum Dot (2024 - Present)",
-    "summary": [
-      "**Goal:** Developing monolithic image sensors using the PbS QDs(quantum dots) for SWIR(Short-Wavelength InfraRed).",
-      "**Key Results:** 10% EQE with a 200nA/cm² dark current density.",
-      "**My Role:** Device architecture design, optoelectronic evaluation, property analysis to guide subsequent design stage",
-      "**Skills:** Monolithic Image Sensors, SWIR Sensor Modelling & Characterization, SWIR Imaging, Image Processing, Python",
-      "We are currently preparing to commercialize this image sensor."
-    ],
-    "tags": ["Quantum Dots", "Nanophotonics", "SWIR", "Image Sensors"]
-  },
+      "id": "featured",
+      "label": "Featured",
+      "projectIds": ["Vieworks-4", "Vieworks-3"]
+    },
+    {
+      "id": "swir",
+      "label": "SWIR",
+      "projectIds": ["Vieworks-4", "Vieworks-5"]
+    },
+    {
+      "id": "xray",
+      "label": "X-Ray",
+      "projectIds": ["Vieworks-3", "Vieworks-2"]
+    },
+    {
+      "id": "nanophotonics",
+      "label": "Nanophotonics",
+      "projectIds": ["Vieworks-1", "Master"]
+    }
+  ],
 
-
-  {
-    "id": "Vieworks-3",
-    "title": "[4] Direct X-Ray Detectors based on Quantum Dot (2023 - 2025)",
-    "summary": [
-      "**Goal:** Developing monolithic image sensors using the PbS QDs(quantum dots) for X-Ray mammographic detectors",
-      "**Key Results:** 40µC/(Gy·cm²) sensitivity with 5nA/cm² dark current density.",
-      "**My Role:** Device architecture design, optoelectronic evaluation, property analysis to guide subsequent design stages.",
-      "**Skills:** Monolithic Image Sensors, X-Ray Sensor Modelling & Characterization, X-Ray Imaging, Image Processing, Python",
-      "We are currently investigating the QD size effect on X-Ray detection performance."
-    ],
-    "tags": ["Quantum Dots", "Direct X-Ray Detectors"]
-  },
-
-
-  {
-    "id": "Vieworks-2",
-    "title": "[3] Metasurface for High Spatial Resolution indirect X-Ray Detectors (2023 - Present)",
-    "summary": [
-      "**Goal:** Addressing the fundamental limitation in spatial resolution of indirect X-Ray detectors caused by isotropic radiation within scintillators.",
-      "**Key Results:** Quadruple enhancement of MTF from 0.15 to 0.6.",
-      "**My Role:** Conceptualizing the Idea, Metasurface design, Optical simulation, and MTF Calculation",
-      "**Skills:** Physical Calculation, COMSOL Multiphysics(EM Wave), FDTD, Python",
-      "We currently investigates simplified metasurfaces via inverse design."
-    ],
-    "tags": ["Metasurface", "Negative Refraction", "Nanophotonics", "Inverse Design", "Indirect X-Ray Detectors"]
-  },
-
-  {
-    "id": "Vieworks-1",
-    "title": "[2] Surface Enhanced Raman Scattering for Point of Care Testing (2021 - 2023)",
-    "summary": [
-      "**Goal:** Developing a Laser Scanning Raman spectroscope to quantitatively measure SERS from Au nanoparticles in fluid.",
-      "**Key Results:** SERS intensity coefficients of variation from 40% to 15%.",
-      "**My Role:** Understanding Physics, Designing and Developing Optical Instruments, Data Analysis",
-      "**Skills:** Solving Maxwell Equation, Ray Optics Simulation, Optical Set-up, Python"
-    ],
-    "tags": ["SERS", "Laser Scanning Raman Spectroscope", "Nanophotonics"]
-  },
-
-  {
-    "id": "Master",
-    "title": "[1] Graphene based Optoelectronic Device (2016 - 2018)",
-    "summary": [
-      "**Goal:** Empirically demonstrating photodoping effect in a graphene-perovskite heterostructure.",
-      "**Key Results:** photodoping level of approximately 3×10¹²/cm² at zero gate bias (Fermi energy variation from 0.37 to 0.43eV).",
-      "**My Role:** Device design, Fabrication, Optoelectronic Evaluation, Property Analysis",
-      "**Skills:** Device Design, Fabrication, Evaluation, Analysis, Labview"
-    ],
-    "tags": ["Graphene", "Optoelectronic Device", "Nanophotonics"]
-  }
-]
+  "projects": [
+    {
+      "id": "Vieworks-5",
+      "title": "SWIR Bio Imaging System",
+      "period": "2026 - Present",
+      "summary": [
+        "**Goal:** Pioneering applications, where visible imaging fails.",
+        "**Key Results:** SWIR Hyperspectral Imaging System",
+        "**My Role**: Planning application, Optical design/assembly, characterization, and physics-guided data analysis",
+        "**Skills:** Ray Optics Simulation, Image Processing, Algorithm Development, Python",
+        "We are currently studying hyperspectral imaging with coded aperture."
+      ],
+      "tags": [
+        "SWIR",
+        "Bio Imaging",
+        "Hyperspectral",
+        "Coded Aperture",
+        "Image Sensors"
+      ]
+    },
+    {
+      "id": "Vieworks-4",
+      "title": "SWIR Image Sensors based on Quantum Dot",
+      "period": "2024 - Present",
+      "summary": [
+        "**Goal:** Developing monolithic image sensors using the PbS QDs(quantum dots) for SWIR(Short-Wavelength InfraRed).",
+        "**Key Results:** 10% EQE with a 200nA/cm² dark current density.",
+        "**My Role:** Device architecture design, optoelectronic evaluation, property analysis to guide subsequent design stage",
+        "**Skills:** Monolithic Image Sensors, SWIR Sensor Modelling & Characterization, SWIR Imaging, Image Processing, Python",
+        "We are currently preparing to commercialize this image sensor."
+      ],
+      "tags": [
+        "Quantum Dots",
+        "Nanophotonics",
+        "SWIR",
+        "Image Sensors"
+      ]
+    },
+    {
+      "id": "Vieworks-3",
+      "title": "Direct X-Ray Detectors based on Quantum Dot",
+      "period": "2023 - 2025",
+      "summary": [
+        "**Goal:** Developing monolithic image sensors using the PbS QDs(quantum dots) for X-Ray mammographic detectors",
+        "**Key Results:** 40µC/(Gy·cm²) sensitivity with 5nA/cm² dark current density.",
+        "**My Role:** Device architecture design, optoelectronic evaluation, property analysis to guide subsequent design stages.",
+        "**Skills:** Monolithic Image Sensors, X-Ray Sensor Modelling & Characterization, X-Ray Imaging, Image Processing, Python",
+        "We are currently investigating the QD size effect on X-Ray detection performance."
+      ],
+      "tags": [
+        "Quantum Dots",
+        "Direct X-Ray Detectors"
+      ]
+    },
+    {
+      "id": "Vieworks-2",
+      "title": "Metasurface for High Spatial Resolution indirect X-Ray Detectors",
+      "period": "2023 - Present",
+      "summary": [
+        "**Goal:** Addressing the fundamental limitation in spatial resolution of indirect X-Ray detectors caused by isotropic radiation within scintillators.",
+        "**Key Results:** Quadruple enhancement of MTF from 0.15 to 0.6.",
+        "**My Role:** Conceptualizing the Idea, Metasurface design, Optical simulation, and MTF Calculation",
+        "**Skills:** Physical Calculation, COMSOL Multiphysics(EM Wave), FDTD, Python",
+        "We currently investigates simplified metasurfaces via inverse design."
+      ],
+      "tags": [
+        "Metasurface",
+        "Negative Refraction",
+        "Nanophotonics",
+        "Inverse Design",
+        "Indirect X-Ray Detectors"
+      ]
+    },
+    {
+      "id": "Vieworks-1",
+      "title": "Surface Enhanced Raman Scattering for Point of Care Testing",
+      "period": "2021 - 2023",
+      "summary": [
+        "**Goal:** Developing a Laser Scanning Raman spectroscope to quantitatively measure SERS from Au nanoparticles in fluid.",
+        "**Key Results:** SERS intensity coefficients of variation from 40% to 15%.",
+        "**My Role:** Understanding Physics, Designing and Developing Optical Instruments, Data Analysis",
+        "**Skills:** Solving Maxwell Equation, Ray Optics Simulation, Optical Set-up, Python"
+      ],
+      "tags": [
+        "SERS",
+        "Laser Scanning Raman Spectroscope",
+        "Nanophotonics"
+      ]
+    },
+    {
+      "id": "Master",
+      "title": "Graphene based Optoelectronic Device",
+      "period": "2016 - 2018",
+      "summary": [
+        "**Goal:** Empirically demonstrating photodoping effect in a graphene-perovskite heterostructure.",
+        "**Key Results:** photodoping level of approximately 3×10¹²/cm² at zero gate bias (Fermi energy variation from 0.37 to 0.43eV).",
+        "**My Role:** Device design, Fabrication, Optoelectronic Evaluation, Property Analysis",
+        "**Skills:** Device Design, Fabrication, Evaluation, Analysis, Labview"
+      ],
+      "tags": [
+        "Graphene",
+        "Optoelectronic Device",
+        "Nanophotonics"
+      ]
+    }
+  ]
+}

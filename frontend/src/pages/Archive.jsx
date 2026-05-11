@@ -29,7 +29,7 @@ function JournalItem(props) {
     var it = props.it;
     return (
         <div className="item">
-            <div className="arc-top">
+            <div className="top">
                 <div className="arc-title">{it.title}</div>
                 <div className="arc-year">{it.year}</div>
             </div>
@@ -46,7 +46,7 @@ function ConfItem(props) {
     var it = props.it;
     return (
         <div className="item">
-            <div className="arc-top">
+            <div className="top">
                 <div className="arc-title">{it.title}</div>
                 <div className="arc-year">{it.year}</div>
             </div>
@@ -63,7 +63,7 @@ function PatentItem(props) {
     var it = props.it;
     return (
         <div className="item">
-            <div className="arc-top">
+            <div className="top">
                 <div className="arc-title">{it.title}</div>
                 <div className="arc-year">{it.year}</div>
             </div>

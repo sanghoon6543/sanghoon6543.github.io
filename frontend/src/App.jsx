@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import AcademicLayout from "./layouts/AcademicLayout.jsx";
 
 import About from "./pages/About.jsx";
@@ -14,7 +14,8 @@ export default function App() {
     <AcademicLayout>
       <Routes>
         <Route path="/" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects" element={<Navigate to="/projects/featured" replace />} />
+        <Route path="/projects/:categoryId" element={<Projects />} />
         <Route path="/archive" element={<Archive />} />
         <Route path="/cv" element={<CV />} />
         <Route path="/gallery" element={<Gallery />} />
