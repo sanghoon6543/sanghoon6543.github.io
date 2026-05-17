@@ -93,5 +93,55 @@
       ]
     }
 
+  ],
+
+  "funding": [
+
+    {
+      "id": "SWIR-ToF",
+      "year": 2024,
+      "period": "2024 - 2028",
+      "title": "[5] SWIR TOF",
+      "number": "RS-2024-00433428",
+      "status": "In Progress"
+    },
+
+    {
+      "id": "M3D-SWIR",
+      "year": 2023,
+      "period": "2023 - 2026",
+      "title": "[4] M3D-based SWIR CMOS image sensors with environmentally-benign hybrid semiconductor materials",
+      "number": "2410015187",
+      "status": "In Progress"
+    },
+
+    {
+      "id": "Flexible",
+      "year": 2023,
+      "period": "2023 - 2025",
+      "title": "[3] Development of 100㎛ Pixel-Pitch High Resolution Flexible X-ray Detectors based on Nanocomposites",
+      "number": "RS-2023-KT225062",
+      "status": "Under Final Review"
+    },
+
+    {
+      "id": "Rollable",
+      "year": 2023,
+      "period": "2023 - 2024",
+      "title": "[2] Fabrication and Characterization of Image Sensor Devices",
+      "number": "RS-2020-NR117793",
+      "status": "Finish"
+    },
+
+    {
+      "id": "Raman",
+      "year": 2021,
+      "period": "2021 - 2022",
+      "title": "[1] Raman Spectroscopy",
+      "number": "RS-2021-KT215250",
+      "status": "Finish"
+    }
+
   ]
+
 }

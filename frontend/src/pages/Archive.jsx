@@ -8,8 +8,9 @@ import pageMeta from "../data/pageMeta.json";
 
 var archiveTabs = [
     { id: "journals", label: "Journals" },
-    { id: "conferences", label: "Conference" },
-    { id: "patents", label: "Patents" }
+    { id: "conferences", label: "Conferences" },
+    { id: "patents", label: "Patents" },
+    { id: "funding", label: "Funded Projects"}
 ];
 
 function isValidArchiveId(archiveId) {
@@ -93,6 +94,21 @@ function PatentItem(props) {
   );
 }
 
+function FundingItem(props) {
+    var it = props.it;
+    return (
+        <div className="item">
+            <div className="top">
+                <h3 className="title">{it.title}</h3>
+                <div className="period">{it.period}</div>
+            </div>
+            <div className="paragraph">
+                {it.status ? it.status : ""} {it.number ? " · " + it.number : ""}
+            </div>
+        </div>
+  );
+}
+
 function ArchiveItem(props) {
     var archiveId = props.archiveId;
     var item = props.item;
@@ -100,8 +116,10 @@ function ArchiveItem(props) {
     if (archiveId === "journals") { return <JournalItem it={item} />; }
     if (archiveId === "conferences") { return <ConfItem it={item} />; }
     if (archiveId === "patents") { return <PatentItem it={item} />; }
+    if (archiveId === "funding") {return <FundingItem it={item} />; }
     return null;
 }
+
 
 
 export default function Archive() {
@@ -117,6 +135,7 @@ export default function Archive() {
         journals: sortByYearDesc(archive.journals),
         conferences: sortByYearDesc(archive.conferences),
         patents: sortByYearDesc(archive.patents),
+        funding: sortByYearDesc(archive.funding)
     };
     var currentItems = data[archiveId] || [];
 
