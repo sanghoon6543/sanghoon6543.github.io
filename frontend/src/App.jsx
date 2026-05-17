@@ -16,7 +16,8 @@ export default function App() {
         <Route path="/" element={<About />} />
         <Route path="/projects" element={<Navigate to="/projects/featured" replace />} />
         <Route path="/projects/:categoryId" element={<Projects />} />
-        <Route path="/archive" element={<Archive />} />
+        <Route path="/archive" element={<Navigate to="/archive/journals" replace />} />
+        <Route path="/archive/:archiveId" element={<Archive />} />
         <Route path="/cv" element={<CV />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/hobby" element={<Hobby />} />

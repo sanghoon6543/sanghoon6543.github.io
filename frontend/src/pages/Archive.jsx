@@ -1,6 +1,23 @@
 // frontend/src/pages/Archive.jsx
 import React from "react";
-import archive from "../data/archive.json"
+import { NavLink, useParams, Navigate } from "react-router-dom";
+import archive from "../data/archive.json";
+import LastUpdated from "../components/LastUpdated.jsx";
+import pageMeta from "../data/pageMeta.json";
+
+
+var archiveTabs = [
+    { id: "journals", label: "Journals" },
+    { id: "conferences", label: "Conference" },
+    { id: "patents", label: "Patents" }
+];
+
+function isValidArchiveId(archiveId) {
+    for (var i = 0; i < archiveTabs.length; i++) {
+        if (archiveTabs[i].id === archiveId) { return true; }
+    }
+    return false;
+}
 
 function sortByYearDesc(items) {
     var copy = (items || []).slice();
@@ -30,8 +47,8 @@ function JournalItem(props) {
     return (
         <div className="item">
             <div className="top">
-                <div className="arc-title">{it.title}</div>
-                <div className="arc-year">{it.year}</div>
+                <h3 className="title">{it.title}</h3>
+                <div className="period">{it.year}</div>
             </div>
             <div className="paragraph">{it.authors}</div>
             <div className="paragraph">
@@ -47,8 +64,8 @@ function ConfItem(props) {
     return (
         <div className="item">
             <div className="top">
-                <div className="arc-title">{it.title}</div>
-                <div className="arc-year">{it.year}</div>
+                <h3 className="title">{it.title}</h3>
+                <div className="period">{it.year}</div>
             </div>
             <div className="paragraph">{it.authors}</div>
             <div className="paragraph">
@@ -64,10 +81,10 @@ function PatentItem(props) {
     return (
         <div className="item">
             <div className="top">
-                <div className="arc-title">{it.title}</div>
-                <div className="arc-year">{it.year}</div>
+                <h3 className="title">{it.title}</h3>
+                <div className="period">{it.year}</div>
             </div>
-            <div className="paragraph">{it.inventors}</div>
+            <div className="paragraph">{it.authors}</div>
             <div className="paragraph">
                 {it.status ? it.status : ""} {it.number ? " · " + it.number : ""}
             </div>
@@ -76,52 +93,49 @@ function PatentItem(props) {
   );
 }
 
+function ArchiveItem(props) {
+    var archiveId = props.archiveId;
+    var item = props.item;
+
+    if (archiveId === "journals") { return <JournalItem it={item} />; }
+    if (archiveId === "conferences") { return <ConfItem it={item} />; }
+    if (archiveId === "patents") { return <PatentItem it={item} />; }
+    return null;
+}
+
+
 export default function Archive() {
     React.useEffect(function () {
         document.title = "Archive | Sanghoon Kim";
     }, []);
+
+    var params = useParams();
+    var archiveId = params.archiveId || "journals";
+    if (!isValidArchiveId(archiveId)) { return <Navigate to="/archive/journals" replace />; }
 
     var data = {
         journals: sortByYearDesc(archive.journals),
         conferences: sortByYearDesc(archive.conferences),
         patents: sortByYearDesc(archive.patents),
     };
+    var currentItems = data[archiveId] || [];
 
-    var [tab, setTab] = React.useState("journals");
 
   return (
     <div>
       <h1 style={{ margin: 0 }}>Archive</h1>
+      <LastUpdated date={pageMeta.archive.lastUpdated} />
 
       <div className="tabs">
-        <button className={"tab" + (tab === "journals" ? " active" : "")} onClick={function () { setTab("journals");}}>
-          Journals
-        </button>
-
-        <button className={"tab" + (tab === "conferences" ? " active" : "")} onClick={function () { setTab("conferences");}}>
-          Conference
-        </button>
-
-        <button className={"tab" + (tab === "patents" ? " active" : "")} onClick={function () { setTab("patents"); }}>
-          Patents
-        </button>
+        {archiveTabs.map(function (c) {
+          return (<NavLink key={c.id} to={"/archive/" + c.id} className="tab">{c.label} </NavLink>);
+        })}
       </div>
 
       <div className="arc-list">
-        {tab === "journals" ? data.journals.map(function (it) {
-              return <JournalItem key={it.id} it={it} />;
-            }) : null
-        }
-
-        {tab === "conferences" ? data.conferences.map(function (it) {
-              return <ConfItem key={it.id} it={it} />;
-            }) : null
-        }
-
-        {tab === "patents" ? data.patents.map(function (it) {
-              return <PatentItem key={it.id} it={it} />;
-            }) : null
-        }
+          {currentItems.map(function (item) {
+              return ( <ArchiveItem key={item.id} archiveId={archiveId} item={item} /> );
+          })}
       </div>
     </div>
   );

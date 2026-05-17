@@ -2,6 +2,9 @@
 import React from "react";
 import { NavLink, useParams, Navigate } from "react-router-dom";
 import projectData from "../data/projects.json";
+import LastUpdated from "../components/LastUpdated.jsx";
+import pageMeta from "../data/pageMeta.json";
+
 
 function getCategoryById(categoryId) {
     var categories = projectData.categories || [];
@@ -32,10 +35,9 @@ function ProjectItem(props) {
         <div className = "item">
             <div className = "top">
                 <h3 className = "title">
-                    <span className="number">[{displayNumber}] </span>
-                    {p.title}
-                    {p.period ? <span className="proj-period"> ({p.period})</span> : null}
+                    <span className="number">[{displayNumber}] </span> {p.title}
                 </h3>
+                {p.period ? <span className="period"> {p.period}</span> : null}
             </div>
 
             {(p.summary || []).map(function (line, idx) {
@@ -83,6 +85,8 @@ export default function Projects() {
           <a href="/files/projects/Kim, Sang Hoon (Research Experience Summary).pdf" target="_blank" rel="noreferrer">
            [Overview PDF] </a>
         </div>
+        <LastUpdated date={pageMeta.projects.lastUpdated} />
+
         <div className="tabs">
           {(projectData.categories || []).map(function (c) {
               return (

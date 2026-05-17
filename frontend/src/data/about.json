@@ -8,7 +8,8 @@
       { "type":  "p", "text": "5+ years in image sensor R&D" },
       { "type":  "p", "text": "M.S. in Electrical Engineering, KAIST"},
       { "type":  "p", "text": "SWIR · X-ray · Nanophotonics · Sensor Characterization · Imaging Systems"},
-      { "type":  "p", "text": "I study how useful information can be extracted from electromagnetic-matter interactions beyond the visible, using SWIR, X-Ray, SPAD, and nanophotonic sensing systems."}
+      { "type":  "p", "text": "I study beyond-visible information through optoelectronic sensors."},
+      { "type":  "p", "text": "Mr role is to characterize sensor behavior, analyze performance limits, and provide design directions for the next sensor or system iteration."}
     ]
   },
 

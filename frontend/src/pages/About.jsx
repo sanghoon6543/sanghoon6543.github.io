@@ -1,5 +1,8 @@
 import React from "react";
-import sections from "../data/about.json"
+import sections from "../data/about.json";
+import LastUpdated from "../components/LastUpdated.jsx";
+import pageMeta from "../data/pageMeta.json";
+
 
 function Figure(props) {
   var img = props.img;
@@ -31,6 +34,8 @@ export default function About() {
   return (
     <div>
 {/*       <h1>About</h1> */}
+        <LastUpdated date={pageMeta.about.lastUpdated} />
+
         <div className="about-list">
             {sections.map(function (s) {
                 return (
