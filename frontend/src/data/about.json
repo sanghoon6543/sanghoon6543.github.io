@@ -19,7 +19,7 @@
     "blocks": [
       { "type":  "p", "text": "Humans perceive the intensity of wavelength from 400nm to 700nm as visible image, and this visual information significantly influences  recognition both on biological and intelligent systems. Based on such stimuli, they react and predict future states. Although the visible provides abundant data, electromagnetic waves possess many other parameters, and these would be valuable as X-Ray did."},
       { "type":  "img", "src": "/images/about/Electromagnetic Spectrum.jpg", "alt": "ElectroMagnetic Spectrum", "caption": "Image from wikipedia"},
-      { "type":  "p", "text": "My research interest is to pave and interpret novel forms of beneficial information beyond our eyes through obtaining electromagnetic information by using sensing system"},
+      { "type":  "p", "text": "My research focuses on extracting and interpreting useful information beyond human vision through electromagnetic sensing systems."},
       { "type":  "img", "src": "/images/about/EM-Wave.gif", "alt": "ElectroMagnetic Wave", "caption": "Image from wikipedia"}
     ]
   },
@@ -42,7 +42,7 @@
       { "type":  "p", "text": "- GUI development using PyQt and tkinter"},
       { "type":  "p", "text": "- Automated control of source meters, DAQ units, monochromators, spectrometers, and probe stations"},
       { "type":  "p", "text": "- Extraction of sensor metrics: Dark current, EQE, responsivity, detectivity, time response, temporal noise, SNR, DSNU, PRNU, DCR, PDP, and MTF"},
-      { "type":  "p", "text": "- Sensor-specific debugging and design feedback"}
+      { "type":  "p", "text": "- Used automated characterization results to identify sensor formance bottlenecks and guide device & system design directions"}
     ]
   }
 
