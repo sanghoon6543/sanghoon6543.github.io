@@ -3,18 +3,24 @@
     {
       "id": "featured",
       "label": "Featured",
-      "projectIds": ["Vieworks-4", "Vieworks-3"]
+      "projectIds": ["Vieworks-4", "Vieworks-3", "Vieworks-5"]
     },
     {
       "id": "swir",
       "label": "SWIR",
-      "projectIds": ["Vieworks-4", "Vieworks-5"]
+      "projectIds": ["Vieworks-4", "Vieworks-6"]
     },
     {
       "id": "xray",
       "label": "X-Ray",
       "projectIds": ["Vieworks-3", "Vieworks-2"]
     },
+    {
+      "id": "low light",
+      "label": "Low Light",
+      "projectIds": ["Vieworks-5"]
+    },
+
     {
       "id": "nanophotonics",
       "label": "Nanophotonics",
@@ -24,7 +30,7 @@
 
   "projects": [
     {
-      "id": "Vieworks-5",
+      "id": "Vieworks-6",
       "title": "SWIR Bio Imaging System",
       "period": "2026 - Present",
       "summary": [
@@ -42,6 +48,26 @@
         "Image Sensors"
       ]
     },
+
+    {
+      "id": "Vieworks-5",
+      "title": "SPAD for Low-light spectroscopy",
+      "period": "2026 - Present",
+      "summary": [
+        "**Goal:** Replace cooled CCD based spectroscopy",
+        "**Key Results:** 35% PDP with a 20cps/㎛² DCR, 1㎲ scale acquisition, Temperature coefficients of 10mV/K ",
+        "**My Role**: Characterization, physics-guided data analysis, comparing with cooled CCD",
+        "**Skills:** Physics understanding, Algorithm Development, Python",
+        "We are currently comparing performances with cooled CCD"
+      ],
+      "tags": [
+        "SPAD",
+        "Photon Counting",
+        "Low Light Imaging",
+        "Spectroscopy"
+      ]
+    },
+
     {
       "id": "Vieworks-4",
       "title": "SWIR Image Sensors based on Quantum Dot",
