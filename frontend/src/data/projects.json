@@ -55,7 +55,7 @@
       "title": "SPAD for Low-light spectroscopy",
       "period": "2026 - Present",
       "summary": [
-        "**Goal:** Replace cooled CCD based spectroscopy.",
+        "**Goal:** Evaluate SPAD device as a potential alternative to cooled CCDs for low-light spectroscopy.",
         "**Key Results:** 35% PDP with a 20cps/㎛² DCR, 1㎲ scale acquisition, Temperature coefficients of 10mV/K.",
         "**My Role**: Characterization, physics-guided data analysis, comparing with cooled CCD.",
         "**Skills:** Physics understanding, Algorithm Development, Python.",
@@ -115,7 +115,7 @@
         "**My Role:** Conceptualizing the Idea, Metasurface design, Optical simulation, and MTF Calculation.",
         "**Design Insight**: Analyzed MTF dependency on various parameters and introduced metasurface to compensate the inherent limitations.",
         "**Skills:** Physical Calculation, COMSOL Multiphysics(Wave Optics), FDTD, Python.",
-        "We currently investigates simplified metasurfaces via inverse design."
+        "We are currently investigating simplified metasurfaces via inverse design."
       ],
       "tags": [
         "Metasurface",
