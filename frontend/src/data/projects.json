@@ -3,41 +3,42 @@
     {
       "id": "featured",
       "label": "Featured",
-      "projectIds": ["Vieworks-4", "Vieworks-3", "Vieworks-5"]
+      "projectIds": ["vw-4", "vw-3", "vw-5"]
     },
     {
       "id": "swir",
       "label": "SWIR",
-      "projectIds": ["Vieworks-4", "Vieworks-6"]
+      "projectIds": ["vw-4", "vw-6"]
     },
     {
       "id": "xray",
       "label": "X-Ray",
-      "projectIds": ["Vieworks-3", "Vieworks-2"]
+      "projectIds": ["vw-3", "vw-2"]
     },
     {
       "id": "low light",
       "label": "Low Light",
-      "projectIds": ["Vieworks-5"]
+      "projectIds": ["vw-5"]
     },
 
     {
       "id": "nanophotonics",
       "label": "Nanophotonics",
-      "projectIds": ["Vieworks-1", "Master"]
+      "projectIds": ["vw-2", "vw-1", "Master"]
     }
   ],
 
   "projects": [
     {
-      "id": "Vieworks-6",
+      "id": "vw-6",
       "title": "SWIR Bio Imaging System",
       "period": "2026 - Present",
       "summary": [
         "**Goal:** Pioneering applications, where visible imaging fails.",
-        "**Key Results:** SWIR Hyperspectral Imaging System",
-        "**My Role**: Planning application, Optical design/assembly, characterization, and physics-guided data analysis",
-        "**Skills:** Ray Optics Simulation, Image Processing, Algorithm Development, Python",
+        "**Key Results:** SWIR Hyperspectral Imaging System.",
+        "**My Role**: Planning application, Optical design/assembly, characterization, and physics-guided data analysis.",
+        "**Design Insight**: Optical system design guide through electromagnetics including Fresnel equation.",
+        "**Skills:** Ray Optics Simulation, Electromagnetic Calculation, Image Processing, Algorithm Development, Python.",
         "We are currently studying hyperspectral imaging with coded aperture."
       ],
       "tags": [
@@ -50,15 +51,15 @@
     },
 
     {
-      "id": "Vieworks-5",
+      "id": "vw-5",
       "title": "SPAD for Low-light spectroscopy",
       "period": "2026 - Present",
       "summary": [
-        "**Goal:** Replace cooled CCD based spectroscopy",
-        "**Key Results:** 35% PDP with a 20cps/㎛² DCR, 1㎲ scale acquisition, Temperature coefficients of 10mV/K ",
-        "**My Role**: Characterization, physics-guided data analysis, comparing with cooled CCD",
-        "**Skills:** Physics understanding, Algorithm Development, Python",
-        "We are currently comparing performances with cooled CCD"
+        "**Goal:** Replace cooled CCD based spectroscopy.",
+        "**Key Results:** 35% PDP with a 20cps/㎛² DCR, 1㎲ scale acquisition, Temperature coefficients of 10mV/K.",
+        "**My Role**: Characterization, physics-guided data analysis, comparing with cooled CCD.",
+        "**Skills:** Physics understanding, Algorithm Development, Python.",
+        "We are currently comparing performances with cooled CCD."
       ],
       "tags": [
         "SPAD",
@@ -69,14 +70,15 @@
     },
 
     {
-      "id": "Vieworks-4",
+      "id": "vw-4",
       "title": "SWIR Image Sensors based on Quantum Dot",
       "period": "2024 - Present",
       "summary": [
         "**Goal:** Developing monolithic image sensors using the PbS QDs(quantum dots) for SWIR(Short-Wavelength InfraRed).",
         "**Key Results:** 10% EQE with a 200nA/cm² dark current density.",
-        "**My Role:** Device architecture design, optoelectronic evaluation, property analysis to guide subsequent design stage",
-        "**Skills:** Monolithic Image Sensors, SWIR Sensor Modelling & Characterization, SWIR Imaging, Image Processing, Python",
+        "**My Role:** Device architecture design, optoelectronic evaluation, property analysis to guide subsequent design stage.",
+        "**Design Insight**: Analyzed image quality dependency on various parameters such as bias, temperature, exposure time, gain to identify performance bottlenecks.",
+        "**Skills:** Monolithic Image Sensors, SWIR Sensor Modelling & Characterization, SWIR Imaging, Image Processing, Python.",
         "We are currently preparing to commercialize this image sensor."
       ],
       "tags": [
@@ -87,14 +89,15 @@
       ]
     },
     {
-      "id": "Vieworks-3",
+      "id": "vw-3",
       "title": "Direct X-Ray Detectors based on Quantum Dot",
       "period": "2023 - 2025",
       "summary": [
-        "**Goal:** Developing monolithic image sensors using the PbS QDs(quantum dots) for X-Ray mammographic detectors",
+        "**Goal:** Developing monolithic image sensors using the PbS QDs(quantum dots) for X-Ray mammographic detectors.",
         "**Key Results:** 40µC/(Gy·cm²) sensitivity with 5nA/cm² dark current density.",
         "**My Role:** Device architecture design, optoelectronic evaluation, property analysis to guide subsequent design stages.",
-        "**Skills:** Monolithic Image Sensors, X-Ray Sensor Modelling & Characterization, X-Ray Imaging, Image Processing, Python",
+        "**Design Insight**: Analyzed photodetector performance dependency on various parameters such as material composition, thickness, bias to direct design.",
+        "**Skills:** Monolithic Image Sensors, X-Ray Sensor Modelling & Characterization, X-Ray Imaging, Image Processing, Python.",
         "We are currently investigating the QD size effect on X-Ray detection performance."
       ],
       "tags": [
@@ -103,14 +106,15 @@
       ]
     },
     {
-      "id": "Vieworks-2",
+      "id": "vw-2",
       "title": "Metasurface for High Spatial Resolution indirect X-Ray Detectors",
       "period": "2023 - Present",
       "summary": [
         "**Goal:** Addressing the fundamental limitation in spatial resolution of indirect X-Ray detectors caused by isotropic radiation within scintillators.",
         "**Key Results:** Quadruple enhancement of MTF from 0.15 to 0.6.",
-        "**My Role:** Conceptualizing the Idea, Metasurface design, Optical simulation, and MTF Calculation",
-        "**Skills:** Physical Calculation, COMSOL Multiphysics(EM Wave), FDTD, Python",
+        "**My Role:** Conceptualizing the Idea, Metasurface design, Optical simulation, and MTF Calculation.",
+        "**Design Insight**: Analyzed MTF dependency on various parameters and introduced metasurface to compensate the inherent limitations.",
+        "**Skills:** Physical Calculation, COMSOL Multiphysics(Wave Optics), FDTD, Python.",
         "We currently investigates simplified metasurfaces via inverse design."
       ],
       "tags": [
@@ -122,14 +126,15 @@
       ]
     },
     {
-      "id": "Vieworks-1",
+      "id": "vw-1",
       "title": "Surface Enhanced Raman Scattering for Point of Care Testing",
       "period": "2021 - 2023",
       "summary": [
         "**Goal:** Developing a Laser Scanning Raman spectroscope to quantitatively measure SERS from Au nanoparticles in fluid.",
         "**Key Results:** SERS intensity coefficients of variation from 40% to 15%.",
-        "**My Role:** Understanding Physics, Designing and Developing Optical Instruments, Data Analysis",
-        "**Skills:** Solving Maxwell Equation, Ray Optics Simulation, Optical Set-up, Python"
+        "**My Role:** Understanding Physics, Designing and Developing Optical Instruments, Data Analysis.",
+        "**Design Insight**: Optical system design guide through understanding SERS radiation pattern from the Helmholtz equation.",
+        "**Skills:** Solving Maxwell Equation, Ray Optics Simulation, Optical Set-up, Python."
       ],
       "tags": [
         "SERS",
@@ -144,8 +149,9 @@
       "summary": [
         "**Goal:** Empirically demonstrating photodoping effect in a graphene-perovskite heterostructure.",
         "**Key Results:** photodoping level of approximately 3×10¹²/cm² at zero gate bias (Fermi energy variation from 0.37 to 0.43eV).",
-        "**My Role:** Device design, Fabrication, Optoelectronic Evaluation, Property Analysis",
-        "**Skills:** Device Design, Fabrication, Evaluation, Analysis, Labview"
+        "**My Role:** Device design, Fabrication, Optoelectronic Evaluation, Property Analysis.",
+        "**Design Insight**: Energy band alignment to maximize photodoping effect.",
+        "**Skills:** Device Design, Fabrication, Evaluation, Analysis, Labview."
       ],
       "tags": [
         "Graphene",

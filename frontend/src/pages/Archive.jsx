@@ -105,6 +105,7 @@ function FundingItem(props) {
             <div className="paragraph">
                 {it.status ? it.status : ""} {it.number ? " · " + it.number : ""}
             </div>
+            <div className="paragraph"> <strong>R&D Funding Agency:</strong>  {it.agency ? it.agency : ""}</div>
         </div>
   );
 }

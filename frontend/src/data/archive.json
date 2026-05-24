@@ -101,9 +101,11 @@
       "id": "SWIR-ToF",
       "year": 2024,
       "period": "2024 - 2028",
-      "title": "[5] SWIR TOF",
+      "title": "[5] Development of ToF Pixel Array Device Technology using QD absorber",
       "number": "RS-2024-00433428",
-      "status": "In Progress"
+      "status": "In Progress",
+      "agency": "Ministry of Trade, Industry and Resources"
+
     },
 
     {
@@ -112,7 +114,8 @@
       "period": "2023 - 2026",
       "title": "[4] M3D-based SWIR CMOS image sensors with environmentally-benign hybrid semiconductor materials",
       "number": "2410015187",
-      "status": "In Progress"
+      "status": "In Progress",
+      "agency": "Ministry of Trade, Industry and Resources"
     },
 
     {
@@ -121,7 +124,8 @@
       "period": "2023 - 2025",
       "title": "[3] Development of 100㎛ Pixel-Pitch High Resolution Flexible X-ray Detectors based on Nanocomposites",
       "number": "RS-2023-KT225062",
-      "status": "Under Final Review"
+      "status": "Under Final Review",
+      "agency": "Ministry of Trade, Industry and Resources"
     },
 
     {
@@ -130,16 +134,18 @@
       "period": "2023 - 2024",
       "title": "[2] Fabrication and Characterization of Image Sensor Devices",
       "number": "RS-2020-NR117793",
-      "status": "Finish"
+      "status": "Finish",
+      "agency": "Ministry of Science and ICT"
     },
 
     {
       "id": "Raman",
       "year": 2021,
       "period": "2021 - 2022",
-      "title": "[1] Raman Spectroscopy",
+      "title": "[1] Development of Ultrasensitive Virus Detection System based on Nanogap Enhanced Raman Scattering",
       "number": "RS-2021-KT215250",
-      "status": "Finish"
+      "status": "Finish",
+      "agency": "Ministry of Trade, Industry and Resources"
     }
 
   ]

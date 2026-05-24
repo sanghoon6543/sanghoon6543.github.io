@@ -4,12 +4,13 @@
     "title": "About Me",
     "blocks": [
       { "type":  "p", "text": "Kim, Sang Hoon"},
-      { "type":  "p", "text": "Beyond Visible Image Sensor R&D Engineer" },
+      { "type":  "p", "text": "Beyond Visible Sensor R&D Engineer" },
       { "type":  "p", "text": "5+ years in image sensor R&D" },
       { "type":  "p", "text": "M.S. in Electrical Engineering, KAIST"},
-      { "type":  "p", "text": "SWIR · X-ray · Nanophotonics · Sensor Characterization · Imaging Systems"},
+      { "type":  "p", "text": "Electromagnetics & Device Physics | SWIR · X-ray · SPAD · Nanophotonics"},
+      { "type":  "p", "text": "Sensor & Imaging Systems Characterization for Design Direction"},
       { "type":  "p", "text": "I study beyond-visible information through optoelectronic sensors."},
-      { "type":  "p", "text": "Mr role is to characterize sensor behavior, analyze performance limits, and provide design directions for the next sensor or system iteration."}
+      { "type":  "p", "text": "My role is to characterize sensor behavior, analyze performance limits, and provide design directions for the next sensor or system iteration."}
     ]
   },
 
@@ -19,7 +20,7 @@
     "blocks": [
       { "type":  "p", "text": "Humans perceive the intensity of wavelength from 400nm to 700nm as visible image, and this visual information significantly influences  recognition both on biological and intelligent systems. Based on such stimuli, they react and predict future states. Although the visible provides abundant data, electromagnetic waves possess many other parameters, and these would be valuable as X-Ray did."},
       { "type":  "img", "src": "/images/about/Electromagnetic Spectrum.jpg", "alt": "ElectroMagnetic Spectrum", "caption": "Image from wikipedia"},
-      { "type":  "p", "text": "My research focuses on extracting and interpreting useful information beyond human vision through electromagnetic sensing systems."},
+      { "type":  "p", "text": "My research focuses on beyond-visible information: how electromagnetic-matter interactions outside the visible spectrum can be sensed, characterized, and translated into useful physical, biological, or structural information"},
       { "type":  "img", "src": "/images/about/EM-Wave.gif", "alt": "ElectroMagnetic Wave", "caption": "Image from wikipedia"}
     ]
   },
@@ -34,10 +35,10 @@
   },
 
   {
-    "id": "technical-platform",
-    "title": "Technical Platform",
+    "id": "tools",
+    "title": "Characterization & Analysis Tools for Understanding Sensor Physics",
     "blocks": [
-      { "type":  "p", "text": "Python-based sensor characterization and analysis platforms"},
+      { "type":  "p", "text": "Python-based tools to support sensor characterization, physics analysis, and design feedback."},
       { "type":  "p", "text": "- Instrument control using Python / PyVISA"},
       { "type":  "p", "text": "- GUI development using PyQt and tkinter"},
       { "type":  "p", "text": "- Automated control of source meters, DAQ units, monochromators, spectrometers, and probe stations"},
@@ -45,6 +46,5 @@
       { "type":  "p", "text": "- Used automated characterization results to identify sensor formance bottlenecks and guide device & system design directions"}
     ]
   }
-
 
 ]
