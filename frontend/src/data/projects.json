@@ -56,7 +56,7 @@
       "period": "2026 - Present",
       "summary": [
         "**Goal:** Evaluate SPAD device as a potential alternative to cooled CCDs for low-light spectroscopy.",
-        "**Key Results:** 35% PDP with a 20cps/㎛² DCR, 1㎲ scale acquisition, Temperature coefficients of 10mV/K.",
+        "**Key Results:** 20% PDP with a 25cps/㎛² DCR, 1㎲ scale acquisition, Temperature coefficients of 10mV/K.",
         "**My Role**: Characterization, physics-guided data analysis, comparing with cooled CCD.",
         "**Skills:** Physics understanding, Algorithm Development, Python.",
         "We are currently comparing performances with cooled CCD."
@@ -75,7 +75,7 @@
       "period": "2024 - Present",
       "summary": [
         "**Goal:** Developing monolithic image sensors using the PbS QDs(quantum dots) for SWIR(Short-Wavelength InfraRed).",
-        "**Key Results:** 10% EQE with a 200nA/cm² dark current density.",
+        "**Key Results:** 0.5 A/W Responsivity with a 200nA/cm² dark current density at 1300 nm.",
         "**My Role:** Device architecture design, optoelectronic evaluation, property analysis to guide subsequent design stage.",
         "**Design Insight**: Analyzed image quality dependency on various parameters such as bias, temperature, exposure time, gain to identify performance bottlenecks.",
         "**Skills:** Monolithic Image Sensors, SWIR Sensor Modelling & Characterization, SWIR Imaging, Image Processing, Python.",
@@ -108,7 +108,7 @@
     {
       "id": "vw-2",
       "title": "Metasurface for High Spatial Resolution indirect X-Ray Detectors",
-      "period": "2023 - Present",
+      "period": "2024 - Present",
       "summary": [
         "**Goal:** Addressing the fundamental limitation in spatial resolution of indirect X-Ray detectors caused by isotropic radiation within scintillators.",
         "**Key Results:** Quadruple enhancement of MTF from 0.15 to 0.6.",
