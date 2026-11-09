@@ -44,6 +44,27 @@ function ProjectItem(props) {
                   return <p key={p.id + "-s-" + idx} className="paragraph">{renderBoldText(line, p.id + "-s-" + idx)}</p>;
             })}
 
+            {(p.images || []).length > 0 && (
+                <div className="project-carousel">
+                    {p.images.length > 2 && (<p className="project-carousel-hint">
+                        Scroll horizontally to view {p.images.length} images. </p>)}
+            <div className="project-carousel-track" role="region" aria-label={p.title + " image gallery"} tabIndex={0}>
+                {p.images.map(function (img, index) {
+                    return (
+                        <figure className="project-carousel-slide" key={img.src}>
+                            <a className="project-carousel-image-link" href={img.src} target="_blank" rel="noopener noreferrer" aria-label={"Open full-size image: " + img.alt} >
+                                <img className="project-carousel-image" src={img.src} alt={img.alt} loading="lazy" decoding="async" /> </a>
+                            <figcaption className="project-carousel-caption">
+                                <span className="project-carousel-count"> {index + 1} / {p.images.length} </span>
+                                {img.caption}
+                            </figcaption>
+                        </figure>
+                    );
+                })}
+            </div>
+        </div>
+    )}
+
             <div className="tags">
                 {(p.tags || []).map(function (t) {
                     return <Pill key={t}>{t}</Pill>;

@@ -117,3 +117,60 @@ body{ display: block !important; }
   .ap-nav::-webkit-scrollbar {display: none;}
 
 }
+
+.ap-main,
+.proj-list,
+.item { min-width: 0;}
+
+.project-carousel { --gallery-width: 520px; --image-height: 240px; width: 100%; max-width: var(--gallery-width); min-width: 0; margin: 18px auto;}
+
+.project-carousel-hint { margin: 0 0 8px; font-size: 12px; color: #6b7280; text-align: right; }
+
+.project-carousel-track {display: flex; gap: 16px; width: 100%; min-width: 0; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; scrollbar-width: thin; }
+
+.project-carousel-slide {flex: 0 0 calc((100% - 16px) / 2);  min-width: 0; margin: 0; box-sizing: border-box; scroll-snap-align: start; }
+.project-carousel-track:focus-visible { outline: 2px solid #64748b; outline-offset: 4px; }
+/* 이미지 표시 영역: 비율 유지, 잘림 방지 */
+.project-carousel-image-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: var(--image-height);
+  padding: 6px;
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fff;
+}
+
+/* 원본보다 강제로 확대하지 않음 */
+.project-carousel-image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.project-carousel-caption {
+  margin: 8px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #4b5563;
+  overflow-wrap: anywhere;
+}
+
+.project-carousel-count {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+@media (max-width: 600px) {
+  .project-carousel {
+    --image-height: 180px;
+  }
+}

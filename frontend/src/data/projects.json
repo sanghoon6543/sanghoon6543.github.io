@@ -3,12 +3,12 @@
     {
       "id": "featured",
       "label": "Featured",
-      "projectIds": ["vw-4", "vw-3", "vw-5"]
+      "projectIds": ["vw-4", "vw-1", "vw-7"]
     },
     {
       "id": "swir",
       "label": "SWIR",
-      "projectIds": ["vw-4", "vw-6"]
+      "projectIds": ["vw-4", "vw-6", "vw-7"]
     },
     {
       "id": "xray",
@@ -30,12 +30,42 @@
 
   "projects": [
     {
+      "id": "vw-7",
+      "title": "SWIR Hyperspectral Imaging (Pushbroom)",
+      "period": "2026 - Present",
+      "summary": [
+        "**Goal:** Develop a SWIR hyperspectral imaging platform for material discrimination",
+        "**Key Results:** Spectral-cube Acquisition, PCA & Wavelength Scoring for chemometrics",
+        "**My Role**: Optical layout design, hardware integration, Acquisition software development, Cube analysis",
+        "**Design Insight**: Connected wavelength-dependent material responses with spectral imaging",
+        "**Skills:** Hyperspectral Imaging, Ray Optics Simulation, Optical system alignment, Instrument Control, Python."
+      ],
+      "imageLayout": "single",
+      "images": [
+        {
+          "src": "/images/projects/p08-pp-ps-pca.png",
+          "alt": "Selected PP and PS regions of interest and the corresponding PCA score plot",
+          "caption": "Exploratory PCA of measured spectra from selected polypropylene (PP) and polystyrene (PS) regions of interest.",
+          "maxWidth": 720
+        }
+      ],
+      "tags": [
+        "SWIR",
+        "Hyperspectral Imaging",
+        "Pushbroom",
+        "Spectral Analysis",
+        "Chemometrics"
+      ]
+    },
+
+
+    {
       "id": "vw-6",
-      "title": "SWIR Bio Imaging System",
+      "title": "SWIR Multispectral Imaging",
       "period": "2026 - Present",
       "summary": [
         "**Goal:** Pioneering applications, where visible imaging fails.",
-        "**Key Results:** SWIR Hyperspectral Imaging System.",
+        "**Key Results:** SWIR Multispectral Imaging System.",
         "**My Role**: Planning application, Optical design/assembly, characterization, and physics-guided data analysis.",
         "**Design Insight**: Optical system design guide through electromagnetics including Fresnel equation.",
         "**Skills:** Ray Optics Simulation, Electromagnetic Calculation, Image Processing, Algorithm Development, Python.",
@@ -80,6 +110,35 @@
         "**Design Insight**: Analyzed image quality dependency on various parameters such as bias, temperature, exposure time, gain to identify performance bottlenecks.",
         "**Skills:** Monolithic Image Sensors, SWIR Sensor Modelling & Characterization, SWIR Imaging, Image Processing, Python.",
         "We are currently preparing to commercialize this image sensor."
+      ],
+      "imageLayout": "single",
+
+      "images": [
+        {
+          "src": "/images/projects/p01-visible.png",
+          "alt": "Visible image of the demonstration target",
+          "caption": "Visible"
+        },
+        {
+          "src": "/images/projects/p01-swir.png",
+          "alt": "SWIR image of the demonstration target",
+          "caption": "SWIR"
+        },
+        {
+          "src": "/images/projects/p01-dark-current.png",
+          "alt": "PbS Quantum-Dot based SWIR Image Sensor",
+          "caption": "Dark Current Density"
+        },
+        {
+          "src": "/images/projects/p01-responsivity.png",
+          "alt": "PbS Quantum-Dot based SWIR Image Sensor",
+          "caption": "Responsivity"
+        },
+        {
+          "src": "/images/projects/p01-ptc.png",
+          "alt": "PbS Quantum-Dot based SWIR Image Sensor",
+          "caption": "Photon Transfer Curve"
+        }
       ],
       "tags": [
         "Quantum Dots",
@@ -135,6 +194,34 @@
         "**My Role:** Understanding Physics, Designing and Developing Optical Instruments, Data Analysis.",
         "**Design Insight**: Optical system design guide through understanding SERS radiation pattern from the Helmholtz equation.",
         "**Skills:** Solving Maxwell Equation, Ray Optics Simulation, Optical Set-up, Python."
+      ],
+      "imageLayout": "two-column",
+      "images": [
+        {
+          "src": "/images/projects/p06-near-field-pattern.png",
+          "alt": "COMSOL Simulated Image of a Gold Nanoparticle",
+          "caption": "Near-field Radiation Pattern"
+        },
+        {
+          "src": "/images/projects/p06-near-field-spectrum.png",
+          "alt": "Analytically Calculated Spectrum of a Gold Nanoparticle",
+          "caption": "Near-field Enhancement Factor"
+        },
+        {
+          "src": "/images/projects/p06-far-field-spectrum.png",
+          "alt": "COMSOL Simulated Image of a Gold Nanoparticle",
+          "caption": "Far-field Enhancement Factor"
+        },
+        {
+          "src": "/images/projects/p06-far-field-spectrum.png",
+          "alt": "Analytically Calculated Spectrum of a Gold Nanoparticle",
+          "caption": "Far-field Enhancement Factor"
+        },
+        {
+          "src": "/images/projects/p06-polarizability.png",
+          "alt": "Analytically Calculated Spectrum of Gold Nanoparticles",
+          "caption": "Effective Polarizability"
+        }
       ],
       "tags": [
         "SERS",
