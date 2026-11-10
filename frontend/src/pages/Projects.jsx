@@ -46,8 +46,6 @@ function ProjectItem(props) {
 
             {(p.images || []).length > 0 && (
                 <div className="project-carousel">
-                    {p.images.length > 2 && (<p className="project-carousel-hint">
-                        Scroll horizontally to view {p.images.length} images. </p>)}
             <div className="project-carousel-track" role="region" aria-label={p.title + " image gallery"} tabIndex={0}>
                 {p.images.map(function (img, index) {
                     return (
