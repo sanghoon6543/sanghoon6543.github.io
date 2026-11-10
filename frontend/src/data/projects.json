@@ -31,23 +31,61 @@
   "projects": [
     {
       "id": "vw-7",
+      "projectCode": "P08",
       "title": "SWIR Hyperspectral Imaging (Pushbroom)",
       "period": "2026 - Present",
       "summary": [
-        "**Goal:** Develop a SWIR hyperspectral imaging platform for material discrimination",
+        "**Goal:** Develop a SWIR hyperspectral imaging platform for material discrimination and find optimized wavelength for quantum dot image sensors.",
         "**Key Results:** Spectral-cube Acquisition, PCA & Wavelength Scoring for chemometrics",
-        "**My Role**: Optical layout design, hardware integration, Acquisition software development, Cube analysis",
+        "**My Role**: Optical layout design and alignment, hardware integration, Acquisition software development, Cube analysis",
         "**Design Insight**: Connected wavelength-dependent material responses with spectral imaging",
         "**Skills:** Hyperspectral Imaging, Ray Optics Simulation, Optical system alignment, Instrument Control, Python."
       ],
       "imageLayout": "single",
       "images": [
         {
+          "src": "/images/projects/p08-water-oil-full.png",
+          "alt": "Hyperspectral image of water and oil for range between 1000nm and 1600nm",
+          "caption": "Hyperspectral image",
+          "maxWidth": 720
+        },
+        {
+          "src": "/images/projects/p08-water-oil-band.png",
+          "alt": "Hyperspectral image of water and oil for range between 1400nm and 1450nm",
+          "caption": "Hyperspectral image",
+          "maxWidth": 720
+        },
+        {
+          "src": "/images/projects/p08-water-oil-pca.png",
+          "alt": "Selected water and oil regions of interest and the corresponding PCA score plot",
+          "caption": "Exploratory PCA of measured spectra from selected water and oil regions of interest.",
+          "maxWidth": 720
+        },
+        {
+          "src": "/images/projects/p08-water-oil-wlscore.png",
+          "alt": "Selected water and oil regions of interest and the corresponding wavelength score plot",
+          "caption": "Exploratory wavelength score of measured spectra from selected water and oil regions of interest.",
+          "maxWidth": 720
+        },
+        {
+          "src": "/images/projects/p08-pp-ps-image.png",
+          "alt": "Hyperspectral image of PP and PS for range between 1000nm and 1600nm",
+          "caption": "Exploratory PCA of measured spectra from selected polypropylene (PP) and polystyrene (PS) regions of interest.",
+          "maxWidth": 720
+        },
+        {
           "src": "/images/projects/p08-pp-ps-pca.png",
           "alt": "Selected PP and PS regions of interest and the corresponding PCA score plot",
           "caption": "Exploratory PCA of measured spectra from selected polypropylene (PP) and polystyrene (PS) regions of interest.",
           "maxWidth": 720
+        },
+        {
+          "src": "/images/projects/p08-pp-ps-wlscore.png",
+          "alt": "Selected PP and PS regions of interest and the corresponding wavelength score plot",
+          "caption": "Exploratory wavelength score of measured spectra from selected polypropylene (PP) and polystyrene (PS) regions of interest.",
+          "maxWidth": 720
         }
+
       ],
       "tags": [
         "SWIR",
@@ -61,6 +99,7 @@
 
     {
       "id": "vw-6",
+      "projectCode": "P07",
       "title": "SWIR Multispectral Imaging",
       "period": "2026 - Present",
       "summary": [
@@ -68,28 +107,29 @@
         "**Key Results:** SWIR Multispectral Imaging System.",
         "**My Role**: Planning application, Optical design/assembly, characterization, and physics-guided data analysis.",
         "**Design Insight**: Optical system design guide through electromagnetics including Fresnel equation.",
-        "**Skills:** Ray Optics Simulation, Electromagnetic Calculation, Image Processing, Algorithm Development, Python.",
-        "We are currently studying hyperspectral imaging with coded aperture."
+        "**Skills:** Ray Optics Simulation, Electromagnetic Calculation, Image Processing, Algorithm Development, Python."
       ],
       "tags": [
         "SWIR",
         "Bio Imaging",
         "Hyperspectral",
         "Coded Aperture",
-        "Image Sensors"
+        "SFDI"
       ]
     },
 
     {
       "id": "vw-5",
+      "projectCode": "P05",
       "title": "SPAD for Low-light spectroscopy",
       "period": "2026 - Present",
       "summary": [
-        "**Goal:** Evaluate SPAD device as a potential alternative to cooled CCDs for low-light spectroscopy.",
-        "**Key Results:** 20% PDP with a 25cps/㎛² DCR, 1㎲ scale acquisition, Temperature coefficients of 10mV/K.",
-        "**My Role**: Characterization, physics-guided data analysis, comparing with cooled CCD.",
-        "**Skills:** Physics understanding, Algorithm Development, Python.",
-        "We are currently comparing performances with cooled CCD."
+        "**Goal:** Evaluate a 1 × 256 SPAD array prototype for low-light spectroscopy and compare its performance with a cooled CCD.",
+        "**Key Results:** Characterized 20% PDP with a 25cps/㎛² DCR, 1㎲ scale acquisition, Temperature coefficients of 10mV/K.",
+        "**My Role**: Evaluation-system setup, control and analysis software development, optical and electrical characterization, and operating-condition optimization.",
+        "**Design Insight:** Examined photon-detection performance, dark counts, and temperature dependence to assess operating trade-offs for low-light spectroscopy.",
+        "**Skills:** Photon-Counting Sensor Characterization, Noise Analysis, Temperature-Dependence Analysis, Instrument Control, Python.",
+        "Status: On hold while SWIR and HSI projects take priority."
       ],
       "tags": [
         "SPAD",
@@ -101,14 +141,15 @@
 
     {
       "id": "vw-4",
+      "projectCode": "P01",
       "title": "SWIR Image Sensors based on Quantum Dot",
       "period": "2024 - Present",
       "summary": [
-        "**Goal:** Developing monolithic image sensors using the PbS QDs(quantum dots) for SWIR(Short-Wavelength InfraRed).",
-        "**Key Results:** 0.5 A/W Responsivity with a 200nA/cm² dark current density at 1300 nm.",
-        "**My Role:** Device architecture design, optoelectronic evaluation, property analysis to guide subsequent design stage.",
+        "**Goal:** Develop PbS quantum-dot SWIR image sensors and identify device and operating factors that limit imaging performance.",
+        "**Key Results:** Contributed to a 512 × 512 SWIR sensor prototype, with a responsivity of 0.5 A/W at 1300 nm and a dark current density of 200nA/cm².",
+        "**My Role:** Optoelectronic characterization, physics-based performance analysis, collaborative device architecture design, measurement automation.",
         "**Design Insight**: Analyzed image quality dependency on various parameters such as bias, temperature, exposure time, gain to identify performance bottlenecks.",
-        "**Skills:** Monolithic Image Sensors, SWIR Sensor Modelling & Characterization, SWIR Imaging, Image Processing, Python.",
+        "**Skills:** Semiconductor Device Physics, Image Sensor Characterization, Performance Modeling, Image Processing, Python.",
         "We are currently preparing to commercialize this image sensor."
       ],
       "imageLayout": "single",
@@ -149,6 +190,7 @@
     },
     {
       "id": "vw-3",
+      "projectCode": "P02",
       "title": "Direct X-Ray Detectors based on Quantum Dot",
       "period": "2023 - 2025",
       "summary": [
@@ -166,15 +208,16 @@
     },
     {
       "id": "vw-2",
+      "projectCode": "P04",
       "title": "Metasurface for High Spatial Resolution indirect X-Ray Detectors",
       "period": "2024 - Present",
       "summary": [
         "**Goal:** Addressing the fundamental limitation in spatial resolution of indirect X-Ray detectors caused by isotropic radiation within scintillators.",
-        "**Key Results:** Quadruple enhancement of MTF from 0.15 to 0.6.",
-        "**My Role:** Conceptualizing the Idea, Metasurface design, Optical simulation, and MTF Calculation.",
-        "**Design Insight**: Analyzed MTF dependency on various parameters and introduced metasurface to compensate the inherent limitations.",
-        "**Skills:** Physical Calculation, COMSOL Multiphysics(Wave Optics), FDTD, Python.",
-        "We are currently investigating simplified metasurfaces via inverse design."
+        "**Key Results:** Simulated an MTF increase from 0.15 to 0.60 at 2 lp/mm for a 400 µm-thick scintillator and a sensor with 124 µm pixel pitch.",
+        "**My Role:** Concept proposal, FDTD scattering analysis, COMSOL-based metasurface design, light-propagation modeling, and PSF/MTF analysis.",
+        "**Design Insight**: Connected electromagnetic structure design with detector-level spatial resolution through light-propagation and imaging-performance models",
+        "**Skills:** Electromagnetic Simulation, Metasurface Design, Nanophotonics, PSF/MTF Modeling, COMSOL, FDTD. Python.",
+        "Status: On hold while SWIR and HSI projects take priority."
       ],
       "tags": [
         "Metasurface",
@@ -186,14 +229,15 @@
     },
     {
       "id": "vw-1",
+      "projectCode": "P06",
       "title": "Surface Enhanced Raman Scattering for Point of Care Testing",
       "period": "2021 - 2023",
       "summary": [
-        "**Goal:** Developing a Laser Scanning Raman spectroscope to quantitatively measure SERS from Au nanoparticles in fluid.",
-        "**Key Results:** SERS intensity coefficients of variation from 40% to 15%.",
-        "**My Role:** Understanding Physics, Designing and Developing Optical Instruments, Data Analysis.",
-        "**Design Insight**: Optical system design guide through understanding SERS radiation pattern from the Helmholtz equation.",
-        "**Skills:** Solving Maxwell Equation, Ray Optics Simulation, Optical Set-up, Python."
+        "**Goal:** Improve the reproducibility of SERS measurements from gold nanoparticles in liquid using a laser Scanning Raman system.",
+        "**Key Results:** Reduced the coefficient of variation of Raman-peak intensity from 40% to 15% through spatiotemporal ensemble averaging.",
+        "**My Role:** SERS physics analysis, optical-system development and alignment, scanning integration, instrument control, data analysis.",
+        "**Design Insight**: Investigated near- and far-field behavior and particle-motion effects to connect SERS physics with optical measurement design.",
+        "**Skills:** Electromagnetic modeling, SERS Analysis, Raman Instrumentation, Optical-System Integration, Python."
       ],
       "imageLayout": "two-column",
       "images": [
@@ -208,9 +252,9 @@
           "caption": "Near-field Enhancement Factor"
         },
         {
-          "src": "/images/projects/p06-far-field-spectrum.png",
+          "src": "/images/projects/p06-far-field-pattern.png",
           "alt": "COMSOL Simulated Image of a Gold Nanoparticle",
-          "caption": "Far-field Enhancement Factor"
+          "caption": "Far-field Radiation Pattern"
         },
         {
           "src": "/images/projects/p06-far-field-spectrum.png",
@@ -220,7 +264,7 @@
         {
           "src": "/images/projects/p06-polarizability.png",
           "alt": "Analytically Calculated Spectrum of Gold Nanoparticles",
-          "caption": "Effective Polarizability"
+          "caption": "Coupled SERS and Effective Polarizability"
         }
       ],
       "tags": [

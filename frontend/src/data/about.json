@@ -4,15 +4,24 @@
     "title": "About Me",
     "blocks": [
       { "type":  "p", "text": "Kim, Sang Hoon"},
-      { "type":  "p", "text": "Beyond-visible Sensor R&D Engineer" },
-      { "type":  "p", "text": "5+ years in image sensor R&D" },
+      { "type":  "p", "text": "Optoelectronic Device & Optical Systems R&D Engineer" },
+      { "type":  "p", "text": "5+ years in image sensor & spectroscopic R&D" },
       { "type":  "p", "text": "M.S. in Electrical Engineering, KAIST"},
-      { "type":  "p", "text": "Electromagnetics & Device Physics | SWIR · X-ray · SPAD · Nanophotonics"},
-      { "type":  "p", "text": "Sensor & Imaging Systems Characterization for Design Direction"},
-      { "type":  "p", "text": "I study beyond-visible information through optoelectronic sensors."},
-      { "type":  "p", "text": "My role is to characterize sensor behavior, analyze performance limits, and provide design directions for the next sensor or system iteration."}
+      { "type":  "p", "text": "Electromagnetics · Semiconductor Device Physics · Optoelectronics · Spectral Imaging"},
+      { "type":  "p", "text": "Sensor & Optical Imaging Systems Characterization for Design Direction"},
+      { "type":  "p", "text": "I develop and investigate optoelectronic devices and optical systems information for sensing beyond conventional visible imaging. My work spans SWIR image sensors, X-ray detectors, SPAD characterization, Raman spectroscopy, and hyperspectral imaging."}
     ]
   },
+  {
+    "id": "my-role",
+    "title": "My Role",
+    "blocks": [
+      {"type": "p", "text": "At the device level, I characterize optical and electrical behavior, investigate performance limits, and contribute to device architecture and operating condition decisions through physics-based analysis."},
+      {"type": "p", "text": "At the system level, I translate sensing objectives into optical configurations, build and align experimental setups, integrate instruments and acquisition software, and develop calibration and analysis workflows."},
+      {"type": "p", "text": "Across both levels, I connect electromagnetic and semiconductor physics with measured performance to guide device and system development."}
+    ]
+  },
+
 
   {
     "id": "research-interest",
@@ -21,16 +30,18 @@
       { "type":  "p", "text": "Humans perceive the intensity of wavelength from 400nm to 700nm as visible image, and this visual information significantly influences recognition both on biological and intelligent systems. Based on such stimuli, they react and predict future states. Although the visible spectrum provides abundant data, electromagnetic waves outside the visible possess many other parameters, and these can reveal additional physical, biological, and structural properties, as demonstrated by X-Ray imaging."},
       { "type":  "img", "src": "/images/about/Electromagnetic Spectrum.jpg", "alt": "ElectroMagnetic Spectrum", "caption": "Image from wikipedia"},
       { "type":  "p", "text": "My research focuses on beyond-visible information: how electromagnetic-matter interactions outside the visible spectrum can be sensed, characterized, and translated into useful physical, biological, or structural information"},
-      { "type":  "img", "src": "/images/about/EM-Wave.gif", "alt": "ElectroMagnetic Wave", "caption": "Image from wikipedia"}
+      { "type":  "img", "src": "/images/about/EM-Wave.gif", "alt": "ElectroMagnetic Wave", "caption": "Image from wikipedia"},
+      { "type":  "p", "text": "I am interested in integrating photonic systems into sensors to exceed performance limits without bulky optical systems." }
     ]
   },
 
   {
     "id": "research-approach",
-    "title": "Research Approach: Characterization → Analysis → Understand Physics → Design Direction",
+    "title": "Research Approach",
     "blocks": [
-      { "type":  "p", "text": "In beyond-visible sensor research, my role is to characterize sensor behavior, analyze the underlying performance limits, and provide design directions for the next device or system iteration."},
-      { "type":  "p", "text": "I use automated characterization workflows not as an end goal, but as a research tool to connect device-level physics with imaging-system performance."}
+      { "type":  "p", "text": "My research begins with the physical mechanisms that determine a device response or a measurement signal. I combine analytical models, electromagnetic and optical simulations, and experiments to identify limiting factors and evaluate design choices."},
+      { "type":  "p", "text": "Examples include analyzing SERS near- and far-field behavior to inform Raman measurements, modeling light propagation and MTF in indirect X-ray detectors, and interpreting wavelength-dependent material response in SWIR spectral imaging."},
+      { "type":  "p", "text": "I use instrument automation and analysis software to make these investigations repeatable and connect experimental observations with design decisions."}
     ]
   },
 
