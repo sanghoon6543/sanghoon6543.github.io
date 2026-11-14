@@ -9,7 +9,7 @@
       { "type":  "p", "text": "M.S. in Electrical Engineering, KAIST"},
       { "type":  "p", "text": "Electromagnetics · Semiconductor Device Physics · Optoelectronics · Spectral Imaging"},
       { "type":  "p", "text": "Sensor & Optical Imaging Systems Characterization for Design Direction"},
-      { "type":  "p", "text": "I develop and investigate optoelectronic devices and optical systems information for sensing beyond conventional visible imaging. My work spans SWIR image sensors, X-ray detectors, SPAD characterization, Raman spectroscopy, and hyperspectral imaging."}
+      { "type":  "p", "text": "I develop and investigate optoelectronic devices and optical systems for sensing beyond conventional visible information. My work spans SWIR image sensors, X-ray detectors, SPAD characterization, Raman spectroscopy, and hyperspectral imaging."}
     ]
   },
   {
@@ -31,7 +31,7 @@
       { "type":  "img", "src": "/images/about/Electromagnetic Spectrum.jpg", "alt": "ElectroMagnetic Spectrum", "caption": "Image from wikipedia"},
       { "type":  "p", "text": "My research focuses on beyond-visible information: how electromagnetic-matter interactions outside the visible spectrum can be sensed, characterized, and translated into useful physical, biological, or structural information"},
       { "type":  "img", "src": "/images/about/EM-Wave.gif", "alt": "ElectroMagnetic Wave", "caption": "Image from wikipedia"},
-      { "type":  "p", "text": "I am interested in integrating photonic systems into sensors to exceed performance limits without bulky optical systems." }
+      { "type":  "p", "text": "I aim to extend my research toward integrating photonic systems into sensors to exceed performance limits without bulky optical systems." }
     ]
   },
 
@@ -47,9 +47,9 @@
 
   {
     "id": "tools",
-    "title": "Characterization & Analysis Tools for Understanding Sensor Physics",
+    "title": "Research Tools & Methods",
     "blocks": [
-      { "type":  "p", "text": "Python-based tools to support sensor characterization, physics analysis, and design feedback."},
+      { "type":  "p", "text": "I use electromagnetic and optical modeling, experimental characterization, and Python-based acquisition and analysis tools to investigate device and optical systems."},
       { "type":  "p", "text": "- Instrument control using Python / PyVISA"},
       { "type":  "p", "text": "- GUI development using PyQt and tkinter"},
       { "type":  "p", "text": "- Automated control of source meters, DAQ units, monochromators, spectrometers, and probe stations"},
